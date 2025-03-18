@@ -4,58 +4,66 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000000;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 25px;
 }
 .header {
-  background-color: #fe1a19;
-  padding: 20px;
-  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  color: #e50043;
+  padding: 50px;
+  font-size: 50px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links li {
+  margin-right: 25px;
+}
+
+.links li:last-of-type {
+  margin-right: 0px;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
 }
 
 .footer {
+  padding: 50px;
   display: flex;
-  background-color: #fe1a19;
-  height: 60px;
   justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
+  background-color: #f8bfc7;
+  font-size: 50px;
   color: #ffffff;
 }
-.footer a {
-  padding-top: 6px;
+a:link,
+a:visited {
+  color: #e50043;
+  text-decoration: none;
 }
-
 .main {
-  font-family: "Times New Roman", Times, serif;
+  width: auto; /* Укажите ширину */
+  height: 950px; /* Укажите высоту */
+  background-image: url("images/evian_origins_logo.png"); /* Путь к изображению */
+  background-size: cover; /* Растянуть изображение, сохраняя пропорции */
+  background-position: top; /* Центрирование */
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main h1 {
   font-weight: 400;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  margin: 52px 45px;
-}
-
-.table {
-  border: 5px solid #e5e000;
-  border-radius: 30px;
-  margin: 0px 25px;
-  padding: 33px;
-  width: 400px;
-}
-
-.main ul {
-  list-style-position: inside;
-  list-style: none;
-}
-.main h2 {
-  font-family: Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  padding-bottom: 21px;
-}
-
-.main p {
-  padding-top: 20px;
+  font-size: 100px;
+  color: #e50043;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap; /* Чтобы заголовок не переносился */
 }
