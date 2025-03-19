@@ -9,11 +9,21 @@ body {
   font-size: 25px;
 }
 .header {
+  width: 100%;
+  height: 140px;
+  padding: 0px 50px;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+
+  background: #ffffff;
   color: #e50043;
-  padding: 50px;
   font-size: 50px;
+
+  z-index: 1;
 }
 
 .links {
@@ -47,7 +57,7 @@ a:visited {
   color: #e50043;
   text-decoration: none;
 }
-.main {
+.hero {
   width: auto; /* Укажите ширину */
   height: 950px; /* Укажите высоту */
   background-image: url("images/evian_origins_logo.png"); /* Путь к изображению */
@@ -56,7 +66,10 @@ a:visited {
   background-repeat: no-repeat;
   position: relative;
 }
-.main h1 {
+.logo1 {
+  height: 140px;
+}
+.hero h1 {
   font-weight: 400;
   font-size: 100px;
   color: #e50043;
@@ -66,4 +79,38 @@ a:visited {
   transform: translate(-50%, -50%);
   text-align: center;
   white-space: nowrap; /* Чтобы заголовок не переносился */
+}
+
+.text-one {
+  margin: 150px auto;
+  padding: 24px;
+  border: 3px solid #f8bfc7;
+  border-radius: 20px;
+  max-width: 1040px;
+  width: 100%;
+}
+
+.text-two {
+  margin: 150px auto;
+  display: flex;
+  padding: 30px 30px 30px 80px;
+  border: 3px solid #f8bfc7;
+  border-radius: 20px;
+  max-width: 1040px;
+  width: 100%;
+}
+.glass {
+  padding-right: 80px;
+}
+.bottles {
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 1040px;
+  width: 100%;
+}
+
+.text {
+  margin-top: 48px;
 }
