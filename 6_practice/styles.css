@@ -3,17 +3,85 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+.theme {
+  height: 100px;
+  background-color: #0000ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* Макет для мобильных */
-@media only screen and (max-width: 400px) {
-  body {
+.header {
+  padding: 0px 30px;
+}
+.footer {
+  padding: 0px 11px 0px 23px;
+  font-size: 20px;
+}
+.footer > a {
+  padding-top: 6.5px;
+}
+.main {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  margin: 20px auto;
+}
+.block {
+  display: flex;
+  border: 5px solid #000000;
+  width: 330px;
+  height: 165px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1439) {
+  .main {
+    flex-direction: initial;
+    justify-content: center;
+    font-size: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 102px auto;
+    gap: 20px;
+    background-color: aqua;
   }
 }
 
-/* Макет для планшетов */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-}
+/*@media only screen and (min-width: 845px) and (max-width: 1439) {
+  .main {
+    flex-direction: initial;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 102px auto;
+    gap: 20px;
+  }
+}*/
 
-/* Макет для десктопов */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1440px) {
+  .block {
+    width: 600px;
+    height: 300px;
+  }
+  .main {
+    flex-direction: initial;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1220px;
+    margin: 102px auto;
+    gap: 20px;
+    font-size: 2em;
+  }
 }
