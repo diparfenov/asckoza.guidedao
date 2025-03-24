@@ -46,20 +46,18 @@ body {
   justify-content: center;
 }
 
-@media only screen and (min-width: 750px) and (max-width: 1439) {
+@media only screen and (min-width: 845px) and (max-width: 844px) {
   .main {
     flex-direction: initial;
     justify-content: center;
-    font-size: 50px;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 102px auto;
     gap: 20px;
-    background-color: aqua;
   }
 }
 
-/*@media only screen and (min-width: 845px) and (max-width: 1439) {
+@media only screen and (min-width: 401px) and (max-width: 1439px) {
   .main {
     flex-direction: initial;
     justify-content: center;
@@ -68,7 +66,15 @@ body {
     margin: 102px auto;
     gap: 20px;
   }
-}*/
+  .block {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 25px;
+  }
+}
 
 @media only screen and (min-width: 1440px) {
   .block {
@@ -83,5 +89,8 @@ body {
     margin: 102px auto;
     gap: 20px;
     font-size: 2em;
+  }
+  .footer {
+    font-size: 25px;
   }
 }
