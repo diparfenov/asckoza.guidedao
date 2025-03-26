@@ -7,21 +7,48 @@
 body {
   font-family: "Times New Roman";
 }
-
+.main {
+  margin: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+}
 .theme {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 400;
   background-color: #ffe138;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
+}
+.column {
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  background-color: aqua;
+  height: 100%;
+  border: 1px solid #000000;
+}
+.column p {
+  margin: 30px 33px;
+}
+.column img {
+  width: 100%;
 }
 
-@media only screen and (min-width: 845px) and (max-width: 844px) {
-}
-
-@media only screen and (min-width: 401px) and (max-width: 1439px) {
-}
-
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
+  .main {
+    flex-direction: initial;
+    margin: 70px;
+    gap: 50px;
+  }
+  .theme {
+    font-size: 50px;
+    height: 160px;
+  }
+  .column {
+    width: 33%;
+  }
 }
