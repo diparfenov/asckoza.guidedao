@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman";
+}
+
+.theme {
+  font-size: 50px;
+  font-weight: 400;
+  background-color: #ffe138;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 845px) and (max-width: 844px) {
+}
+
+@media only screen and (min-width: 401px) and (max-width: 1439px) {
+}
+
+@media only screen and (min-width: 1440px) {
+}
