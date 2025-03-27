@@ -31,3 +31,13 @@ body {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
+.speaker-form {
+  background-color: #ffffff;
+  border: 1px solid #29fd2f;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
