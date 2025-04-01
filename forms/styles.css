@@ -151,6 +151,7 @@ body {
   }
   .form-row .checkbox-label {
     margin-left: 120px;
+    background-color: #d55c5f;
     width: auto;
   }
   .form-row .instructions {
