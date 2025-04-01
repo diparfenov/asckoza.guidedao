@@ -139,11 +139,12 @@ body {
 }
 
 .form-row button:hover {
-  background-color: #0b24fb;
+  background-color: #d55c5f;
 }
 
 .form-row button:active {
   background-color: #f1eeee;
+  background-color: #d55c5f;
 }
 @media only screen and (min-width: 700px) {
   .form-row button {
