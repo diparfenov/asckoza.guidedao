@@ -58,11 +58,11 @@ a:visited {
   text-decoration: none;
 }
 .hero {
-  width: auto; /* Укажите ширину */
-  height: 950px; /* Укажите высоту */
-  background-image: url("images/evian_origins_logo.png"); /* Путь к изображению */
-  background-size: cover; /* Растянуть изображение, сохраняя пропорции */
-  background-position: top; /* Центрирование */
+  width: auto;
+  height: 950px;
+  background-image: url("images/evian_origins_logo.png");
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
   position: relative;
 }
