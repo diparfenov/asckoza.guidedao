@@ -32,7 +32,7 @@
 }
 
 .sign_up {
-  background-color: #29fd2f;
+  background-color: #7ba47d;
 }
 
 .feature-1 {
@@ -44,7 +44,7 @@
 }
 
 .feature-3 {
-  background-color: #29fd2f;
+  background-color: #7ba47d;
 }
 .illustration img {
   width: 100%;
@@ -54,7 +54,7 @@
 /* Макет для мобильных */
 @media only screen and (max-width: 400px) {
   body {
-    background-color: #29fd2f; /* Зеленый */
+    background-color: #7ba47d; /* Зеленый */
   }
   .header {
     height: auto;
