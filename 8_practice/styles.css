@@ -58,11 +58,12 @@ a:visited {
   background-color: #4d2b30;
 }
 .form {
-  height: 362px;
-  width: 300px;
   background-color: #f8bfc7;
 }
-
+.label {
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+}
 button {
   font-size: 20px;
 
