@@ -62,7 +62,7 @@ a:visited {
 }
 .label {
   border: 3px solid #ffffff;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 button {
   font-size: 20px;
