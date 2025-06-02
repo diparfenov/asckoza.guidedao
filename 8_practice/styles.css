@@ -109,3 +109,20 @@ a:visited {
   text-decoration: none;
   color: #ffffff;
 }
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #ffffff;
+  border: 1px solid #29fd2f;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
