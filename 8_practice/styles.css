@@ -57,12 +57,27 @@ a:visited {
   align-items: center;
   background-color: #4d2b30;
 }
-.form {
+.label {
+  border: 3px solid #000000;
+  border-radius: 20px;
   background-color: #f8bfc7;
 }
-.label {
-  border: 3px solid #ffffff;
-  border-radius: 20px;
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #4b4b4b;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #4b4b4b;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #4b4b4b;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #4b4b4b;
 }
 button {
   font-size: 20px;
@@ -120,7 +135,6 @@ a:visited {
 .form-row input[type="text"],
 .form-row input[type="email"] {
   background-color: #ffffff;
-  border: 1px solid #29fd2f;
   border-radius: 3px;
   width: 100%;
   padding: 5px;
