@@ -54,10 +54,6 @@ console.log("Результат:", result); */
 
 // console.log(renderTableRow("sss", "wwww"));
 
-function getCapitalized(word) {
-  return `${word[0].toUpperCase()}${word.substring(1).toLowerCase()}`;
-}
+//
 
-console.log(getCapitalized("jAREK"));
-console.log(getCapitalized("kasdkKOJSAPFJPOkl"));
-console.log(getCapitalized("AKDASDJKAKSD"));
+// console.log(Number.parseInt("1 + 123 abc", 10));
