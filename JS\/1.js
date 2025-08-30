@@ -57,3 +57,16 @@ console.log("Результат:", result); */
 //
 
 // console.log(Number.parseInt("1 + 123 abc", 10));
+
+//
+
+function getExcerpt(text) {
+  if (text.length >= 10) {
+    return `${text}...`;
+  }
+  return text;
+}
+
+console.log(getExcerpt("1234567891"));
+console.log(getExcerpt("1234567891234"));
+console.log(getExcerpt("12345"));
