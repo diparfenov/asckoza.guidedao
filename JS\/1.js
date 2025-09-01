@@ -80,8 +80,37 @@ console.log("Результат:", result); */
 
 // console.log(addBrave(["Firefox", "Chrome"]));
 // console.log(addBrave(["Safari"]));
+// const punks = [7804, 3100, 5217, 7252];
+// punks.forEach(function (punk) {
+//   punk -= 1;
+//   // Действие с отдельным панком
+//   console.log(punk, punks[0]);
+// });
 
-punks.forEach(function (punk) {
-  // Действие с отдельным панком
-  console.log(punk);
-});
+// function sumBags(bags) {
+//   let a = 0;
+//   bags.forEach(function (bag) {
+//     a += bag;
+//   });
+//   return a;
+// }
+
+// console.log(sumBags([3043, 7658, 5046, 949]));
+// // 16696
+// console.log(sumBags([6109, 52, 2422, 696]));
+// // 9279
+
+function sumSomeBags(bags) {
+  let sum = 0;
+  bags.forEach(function (bag) {
+    if (bag.toString().length === 4) {
+      sum += bag;
+    }
+  });
+  return sum;
+}
+
+console.log(sumSomeBags([3043, 7658, 5046, 949]));
+// 15747
+console.log(sumSomeBags([6109, 52, 2422, 625]));
+// 8531
