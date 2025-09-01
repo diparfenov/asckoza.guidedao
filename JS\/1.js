@@ -140,3 +140,7 @@ console.log("Результат:", result); */
 //   return html;
 //   // Пишите код решения здесь
 // }
+const ultrasound = [1559, "Ethereum", true, "🦇", "🔊"];
+
+console.log(ultrasound.toString());
+console.log(ultrasound.join(``));
