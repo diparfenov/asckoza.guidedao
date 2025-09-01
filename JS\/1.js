@@ -100,17 +100,43 @@ console.log("Результат:", result); */
 // console.log(sumBags([6109, 52, 2422, 696]));
 // // 9279
 
-function sumSomeBags(bags) {
-  let sum = 0;
-  bags.forEach(function (bag) {
-    if (bag.toString().length === 4) {
-      sum += bag;
-    }
-  });
-  return sum;
-}
+// function sumSomeBags(bags) {
+//   let sum = 0;
+//   bags.forEach(function (bag) {
+//     if (bag.toString().length === 4) {
+//       sum += bag;
+//     }
+//   });
+//   return sum;
+// }
 
-console.log(sumSomeBags([3043, 7658, 5046, 949]));
-// 15747
-console.log(sumSomeBags([6109, 52, 2422, 625]));
-// 8531
+// console.log(sumSomeBags([3043, 7658, 5046, 949]));
+// // 15747
+// console.log(sumSomeBags([6109, 52, 2422, 625]));
+// // 8531
+
+// function sumOddBags(bags) {
+//   let sum = 0;
+//   bags.forEach(function (bag) {
+//     if (bag % 2 == 1) {
+//       sum += bag;
+//     }
+//   });
+//   return sum;
+// }
+
+// console.log(sumOddBags([3043, 7658, 5046, 949]));
+// // 3992
+// console.log(sumOddBags([6109, 52, 2422, 625]));
+// // 6734
+
+// export function getDropdown(currencies) {
+//   let html = `<option value="">Выберите валюту</option>`;
+//   currencies.forEach(function (currency) {
+//     html += `<option value="${currency.toLowerCase()}">${currency}</option>`;
+//     console.log(html);
+//   });
+
+//   return html;
+//   // Пишите код решения здесь
+// }
