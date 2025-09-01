@@ -145,18 +145,26 @@ console.log("Результат:", result); */
 // console.log(ultrasound.toString());
 // console.log(ultrasound.join(``));
 
-function isTxIncluded(bk, tx) {
-  return bk.includes(tx);
+// function isTxIncluded(bk, tx) {
+//   return bk.includes(tx);
+// }
+
+// console.log(isTxIncluded(["0xaea0", "0x8f80", "0xf3ad", "0x17ec"], "0x9e0a")); // false
+// console.log(isTxIncluded(["0x912f", "0x8d19", "0x20ba"], "0x8d19")); // true
+
+// function getSizes(words) {
+//   return words.map(function (word) {
+//     return word.length;
+//   });
+// }
+
+// console.log(getSizes(["Moscow", "Coding", "School"])); // [6, 6, 6]
+// console.log(getSizes(["Do", "Your", "Own", "Research"])); // [2, 4, 3, 8]
+
+function getWithSpaces(strings) {
+  const joined = strings.join(" ");
+  return [joined, joined.length];
 }
 
-console.log(isTxIncluded(["0xaea0", "0x8f80", "0xf3ad", "0x17ec"], "0x9e0a")); // false
-console.log(isTxIncluded(["0x912f", "0x8d19", "0x20ba"], "0x8d19")); // true
-
-function getSizes(words) {
-  return words.map(function (word) {
-    return word.length;
-  });
-}
-
-console.log(getSizes(["Moscow", "Coding", "School"])); // [6, 6, 6]
-console.log(getSizes(["Do", "Your", "Own", "Research"])); // [2, 4, 3, 8]
+console.log(getWithSpaces(["Moscow", "Coding", "School"])); // ["Moscow Coding School", 20]
+console.log(getWithSpaces(["Do", "Your", "Own", "Research"])); // ["Do Your Own Research", 20]
