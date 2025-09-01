@@ -140,7 +140,23 @@ console.log("Результат:", result); */
 //   return html;
 //   // Пишите код решения здесь
 // }
-const ultrasound = [1559, "Ethereum", true, "🦇", "🔊"];
+// const ultrasound = [1559, "Ethereum", true, "🦇", "🔊"];
 
-console.log(ultrasound.toString());
-console.log(ultrasound.join(``));
+// console.log(ultrasound.toString());
+// console.log(ultrasound.join(``));
+
+function isTxIncluded(bk, tx) {
+  return bk.includes(tx);
+}
+
+console.log(isTxIncluded(["0xaea0", "0x8f80", "0xf3ad", "0x17ec"], "0x9e0a")); // false
+console.log(isTxIncluded(["0x912f", "0x8d19", "0x20ba"], "0x8d19")); // true
+
+function getSizes(words) {
+  return words.map(function (word) {
+    return word.length;
+  });
+}
+
+console.log(getSizes(["Moscow", "Coding", "School"])); // [6, 6, 6]
+console.log(getSizes(["Do", "Your", "Own", "Research"])); // [2, 4, 3, 8]
