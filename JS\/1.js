@@ -60,13 +60,28 @@ console.log("Результат:", result); */
 
 //
 
-function getExcerpt(text) {
-  if (text.length >= 10) {
-    return `${text}...`;
-  }
-  return text;
-}
+// function getExcerpt(text) {
+//   if (text.length >= 10) {
+//     return `${text}...`;
+//   }
+//   return text;
+// }
 
-console.log(getExcerpt("1234567891"));
-console.log(getExcerpt("1234567891234"));
-console.log(getExcerpt("12345"));
+// console.log(getExcerpt("1234567891"));
+// console.log(getExcerpt("1234567891234"));
+// console.log(getExcerpt("12345"));
+
+// const cryptoPunks = [7804, 3100, 5217, 7252];
+// console.log(cryptoPunks.push(2140)); // вернет 5 (новая длина массива)
+// // console.log(cryptoPunks); // [7804, 3100, 5217, 7252, 2140]
+// function addBrave(browsers) {
+//   return browsers.push("Brave")[0];
+// }
+
+// console.log(addBrave(["Firefox", "Chrome"]));
+// console.log(addBrave(["Safari"]));
+
+punks.forEach(function (punk) {
+  // Действие с отдельным панком
+  console.log(punk);
+});
