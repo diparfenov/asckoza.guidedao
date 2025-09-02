@@ -222,3 +222,62 @@ console.log("Результат:", result); */
 
 // console.log(getLowRetweets([2, 23, 4, 62])); // [2, 4]
 // console.log(getLowRetweets([34, 7, 15, 0])); // [7, 0]
+// const getTwitterHandle = (users, searchUser) =>
+//   users.find((user) => user === searchUser);
+
+// console.log(
+//   getTwitterHandle(["@kyled116", "@dhof", "@karl_dot_tech"], "@kyled116")
+// ); // "@kyled116"
+// console.log(
+//   getTwitterHandle(["@ukolodny", "@punk4156", "@iamDCinvestor"], "@cdixon")
+// ); // undefined
+
+// const getUsernameLengths = (users) =>
+//   users.map((user) => (user = user.length - 1));
+
+// console.log(getUsernameLengths(["@kyled116", "@dhof", "@karl_dot_tech"])); // [8, 4, 13]
+// console.log(getUsernameLengths(["@ukolodny", "@punk4156", "@iamDCinvestor"])); // [8, 8, 13]
+
+// const getTwitterHandle = (twitterHandle) => {
+//   if (twitterHandle[0] === "@") {
+//     return twitterHandle;
+//   }
+//   return `@${twitterHandle}`;
+// };
+
+// console.log(getTwitterHandle("@kyled116")); // "@kyled116"
+// console.log(getTwitterHandle("hasufl")); // "@hasufl"
+
+// const getCurrency = (price) => {
+//   if (price.includes("$")) {
+//     return "Доллар";
+//   }
+//   if (price.includes("€")) {
+//     return "Евро";
+//   }
+//   return "Недоступно";
+// };
+
+// console.log(getCurrency("$100")); // "Доллар"
+// console.log(getCurrency("5€")); // "Евро"
+// console.log(getCurrency("30 USD")); // "Недоступно"
+
+// let kampai = "За ростовскую братву!";
+// let a = "";
+// kampai = kampai.replace(" ", "_"); // "За_ростовскую братву!"
+// console.log(kampai); // "За ростовскую братву!"
+
+// const getSlug = (title) =>
+//   title.toLowerCase().substring(0, 15).replaceAll(" ", "-");
+
+// console.log(getSlug("Shill your bags")); // "shill-your-bags"
+// console.log(getSlug("Buy the dips")); // "buy-the-dips"
+// console.log(getSlug("Ignore the FUD")); // "ignore-the-fud"
+// console.log(getSlug("We are all gonna make it")); // "we-are-all-gonn"
+
+// const getTodosNumber = (todos) => todos.split(",").length;
+
+// console.log(
+//   getTodosNumber("Сдать пластик,Купить капучинатор,Пересадить аглаонему")
+// ); // 3
+// console.log(getTodosNumber("Установить метамаск,Заправить картридж")); // 2
