@@ -192,3 +192,14 @@ console.log("Результат:", result); */
 // };
 
 // console.log(sum(1, 2));
+
+// const getAvgGlucose = (checks) => {
+//   let sum = 0;
+//   checks.forEach((check) => {
+//     sum += check;
+//   });
+//   const avg = sum / checks.length;
+//   return avg.toFixed(1);
+// };
+
+// console.log(getAvgGlucose([5.4, 8.1, 6.3, 4.9])); // 6.2
