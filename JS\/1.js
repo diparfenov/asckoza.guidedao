@@ -203,3 +203,22 @@ console.log("Результат:", result); */
 // };
 
 // console.log(getAvgGlucose([5.4, 8.1, 6.3, 4.9])); // 6.2
+// const getGlucoseSpikes = (checks) => {
+//   return checks.filter((check) => {
+//     return check > 7.6;
+//   });
+// };
+
+// console.log(getGlucoseSpikes([4.2, 8.5, 6.6, 9.1, 5.0])); // [8.5, 9.1]
+//
+// const getTopRetweets = (retweets) =>
+//   retweets.filter((retweet) => retweet > 100);
+// const getTopRetweets1 = (retweets) =>
+//   retweets.filter((retweet) => retweet > 100);
+// console.log(getTopRetweets([2, 234, 21, 620])); // [234, 620]
+// console.log(getTopRetweets1([234, 47, 157])); // [234, 157]
+
+// const getLowRetweets = (retweets) => retweets.filter((retweet) => retweet < 8);
+
+// console.log(getLowRetweets([2, 23, 4, 62])); // [2, 4]
+// console.log(getLowRetweets([34, 7, 15, 0])); // [7, 0]
