@@ -187,3 +187,8 @@ console.log("Результат:", result); */
 
 // console.log(welcomeUser("Vitalik")); // "Hello Vitalik"
 // console.log(welcomeUser()); // "Hello user"
+// const sum = (a, b) => {
+//   return a + b;
+// };
+
+// console.log(sum(1, 2));
