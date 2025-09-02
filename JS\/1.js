@@ -161,10 +161,21 @@ console.log("Результат:", result); */
 // console.log(getSizes(["Moscow", "Coding", "School"])); // [6, 6, 6]
 // console.log(getSizes(["Do", "Your", "Own", "Research"])); // [2, 4, 3, 8]
 
-function getWithSpaces(strings) {
-  const joined = strings.join(" ");
-  return [joined, joined.length];
-}
+// function getWithSpaces(strings) {
+//   const joined = strings.join(" ");
+//   return [joined, joined.length];
+// }
 
-console.log(getWithSpaces(["Moscow", "Coding", "School"])); // ["Moscow Coding School", 20]
-console.log(getWithSpaces(["Do", "Your", "Own", "Research"])); // ["Do Your Own Research", 20]
+// console.log(getWithSpaces(["Moscow", "Coding", "School"])); // ["Moscow Coding School", 20]
+// console.log(getWithSpaces(["Do", "Your", "Own", "Research"])); // ["Do Your Own Research", 20]
+
+// const block = {
+//   height: 13272801,
+//   transactions: 452,
+//   minedBy: "Spark Pool",
+//   reward: 2.4811,
+//   stateRoot: "0xaa8f4",
+// };
+
+// block.transactions = "w";
+// console.log(block);
