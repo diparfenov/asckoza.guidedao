@@ -179,3 +179,11 @@ console.log("Результат:", result); */
 
 // block.transactions = "w";
 // console.log(block);
+// const abc = "userok";
+// function welcomeUser(name = abc) {
+//   name = 2;
+//   return `Hello ${name}`;
+// }
+
+// console.log(welcomeUser("Vitalik")); // "Hello Vitalik"
+// console.log(welcomeUser()); // "Hello user"
