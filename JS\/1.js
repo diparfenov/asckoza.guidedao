@@ -307,11 +307,48 @@ console.log("Результат:", result); */
 // </tr>`
 //     )
 //     .join("");
-export const getDropdown = (currencies) =>
-  `<option value="">Выберите валюту</option>
-      ${currencies
-        .map(
-          (currency) =>
-            `<option value="${currency.toLowerCase()}">${currency}</option>`
-        )
-        .join("")}`;
+// const getDropdown = (currencies) =>
+//   `<option value="">Выберите валюту</option>
+//       ${currencies
+//         .map(
+//           (currency) =>
+//             `<option value="${currency.toLowerCase()}">${currency}</option>`
+//         )
+//         .join("")}`;
+
+// const needOtrabotka = (grades) => grades.some((grade) => grade < 3);
+
+// console.log(needOtrabotka([3, 4, 5, 3])); // false
+// console.log(needOtrabotka([4, 2, 3, 5])); // true
+
+// const tokens = ["$UNI", "$LINK", "$DAI"];
+
+// // Удаляет первый элемент массива и присваивает его переменной firstItem
+// const firstItem = tokens.splice(2);
+// console.log(tokens); // ["$LINK", "$DAI"]
+// console.log(firstItem); // ["$UNI"]
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.with(2, 6)); // [1, 2, 6, 4, 5]
+// console.log(arr); // [1, 2, 3, 4, 5]``
+
+// let nums = [10, 5, 15, 20];
+
+// let sum = nums.reduce((acc, cur) => {
+//   console.log(`Аккумулятор: ${acc}`);
+//   console.log(`Текущее значение: ${cur}`);
+//   console.log("-----------------------");
+//   return acc + cur;
+// }, 2);
+
+// console.log(`Итоговая сумма: ${sum}`);
+
+// let punks = [3100, 7804, 5217, 8857];
+
+// let sum1 = punks.reduce((acc, cur) => acc + cur, 0);
+// console.log(`Итоговая сумма: ${sum1}`);
+
+// const sumPunks = (punks) => punks.reduce((acc, cur) => acc + cur, 0);
+
+// console.log(sumPunks([3100, 7804, 5217, 8857])); // 24978
+// console.log(sumPunks([2140, 7252, 2338, 6275])); // 18005
