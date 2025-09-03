@@ -281,18 +281,37 @@ console.log("Результат:", result); */
 //   getTodosNumber("Сдать пластик,Купить капучинатор,Пересадить аглаонему")
 // ); // 3
 // console.log(getTodosNumber("Установить метамаск,Заправить картридж")); // 2
-const users = [
-  {
-    id: 1,
-    name: "Nick Szabo",
-  },
-  {
-    id: 2,
-    name: "Gavin Wood",
-  },
-];
+// const users = [
+//   {
+//     id: 1,
+//     name: "Nick Szabo",
+//   },
+//   {
+//     id: 2,
+//     name: "Gavin Wood",
+//   },
+// ];
 
-const html = `<ul>
-${users.map((user) => `<li class="${user.id}">${user.name}</li>`).join("")}
-</ul>`;
-console.log(html); // "<ul> <li>Nick Szabo</li><li>Gavin Wood</li> </ul>"
+// const html = `<ul>
+// ${users.map((user) => `<li class="${user.id}">${user.name}</li>`).join("")}
+// </ul>`;
+// console.log(html); // "<ul> <li>Nick Szabo</li><li>Gavin Wood</li> </ul>"
+
+// export const renderTableRows = (rows) =>
+//   rows
+//     .map(
+//       (row) =>
+//         `<tr>
+// <td>${row[0]}</td>
+// <td>${row[1]}</td>
+// </tr>`
+//     )
+//     .join("");
+export const getDropdown = (currencies) =>
+  `<option value="">Выберите валюту</option>
+      ${currencies
+        .map(
+          (currency) =>
+            `<option value="${currency.toLowerCase()}">${currency}</option>`
+        )
+        .join("")}`;
