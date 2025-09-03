@@ -281,3 +281,18 @@ console.log("Результат:", result); */
 //   getTodosNumber("Сдать пластик,Купить капучинатор,Пересадить аглаонему")
 // ); // 3
 // console.log(getTodosNumber("Установить метамаск,Заправить картридж")); // 2
+const users = [
+  {
+    id: 1,
+    name: "Nick Szabo",
+  },
+  {
+    id: 2,
+    name: "Gavin Wood",
+  },
+];
+
+const html = `<ul>
+${users.map((user) => `<li class="${user.id}">${user.name}</li>`).join("")}
+</ul>`;
+console.log(html); // "<ul> <li>Nick Szabo</li><li>Gavin Wood</li> </ul>"
