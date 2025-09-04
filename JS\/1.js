@@ -442,10 +442,10 @@ console.log("Результат:", result); */
 //   let a = Object.keys(obj);
 //   return a.map((a) => a.toUpperCase());
 // };
-// const getCapsKeys = (obj) => Object.keys(obj).map((key) => key.toUpperCase());
+const getCapsKeys = (obj) => Object.keys(obj).map((key) => key.toUpperCase());
 
-// console.log(getCapsKeys({ id: 1, name: "Vitalik", country: "Canada" })); // ["ID", "NAME", "COUNTRY"]
-// console.log(getCapsKeys({ id: 1, name: "Vitalik", website: "vitalik.ca" })); // ["ID", "NAME", "WEBSITE"]
+console.log(getCapsKeys({ id: 1, name: "Vitalik", country: "Canada" })); // ["ID", "NAME", "COUNTRY"]
+console.log(getCapsKeys({ id: 1, name: "Vitalik", website: "vitalik.ca" })); // ["ID", "NAME", "WEBSITE"]
 const logValues = (obj) =>
   Object.keys(obj).forEach((key) => console.log(obj[key]));
 
