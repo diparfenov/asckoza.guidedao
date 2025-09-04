@@ -442,12 +442,36 @@ console.log("Результат:", result); */
 //   let a = Object.keys(obj);
 //   return a.map((a) => a.toUpperCase());
 // };
-const getCapsKeys = (obj) => Object.keys(obj).map((key) => key.toUpperCase());
+// const getCapsKeys = (obj) => Object.keys(obj).map((key) => key.toUpperCase());
 
-console.log(getCapsKeys({ id: 1, name: "Vitalik", country: "Canada" })); // ["ID", "NAME", "COUNTRY"]
-console.log(getCapsKeys({ id: 1, name: "Vitalik", website: "vitalik.ca" })); // ["ID", "NAME", "WEBSITE"]
-const logValues = (obj) =>
-  Object.keys(obj).forEach((key) => console.log(obj[key]));
+// console.log(getCapsKeys({ id: 1, name: "Vitalik", country: "Canada" })); // ["ID", "NAME", "COUNTRY"]
+// console.log(getCapsKeys({ id: 1, name: "Vitalik", website: "vitalik.ca" })); // ["ID", "NAME", "WEBSITE"]
+// const logValues = (obj) =>
+//   Object.keys(obj).forEach((key) => console.log(obj[key]));
 
-logValues({ id: 1, name: "Vitalik", country: "Canada" }); // Выводит в консоль три сообщения: 1, "Vitalik", "Canada"
-logValues({ id: 1, name: "Vitalik", website: "vitalik.ca" }); // Выводит в консоль три сообщения: 1, "Vitalik", "vitalik.ca"
+// logValues({ id: 1, name: "Vitalik", country: "Canada" }); // Выводит в консоль три сообщения: 1, "Vitalik", "Canada"
+// logValues({ id: 1, name: "Vitalik", website: "vitalik.ca" }); // Выводит в консоль три сообщения: 1, "Vitalik", "vitalik.ca"
+
+const prices = {
+  ethereum: {
+    usd: 3382,
+    eur: 2916,
+    rub: 246392,
+  },
+};
+
+const getPrice = (currency) => {
+  return prices[Object.keys(prices)][currency];
+};
+
+const getPrice1 = (currency) => {
+  return prices.ethereum[currency];
+};
+console.log(prices.ethereum);
+console.log(getPrice1("usd"));
+console.log(getPrice1("eur"));
+console.log(getPrice1("rub"));
+
+console.log(getPrice("usd"));
+console.log(getPrice("eur"));
+console.log(getPrice("rub"));
