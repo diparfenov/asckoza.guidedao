@@ -488,3 +488,24 @@ console.log("Результат:", result); */
 // console.log(getPrice("usd"));
 // console.log(getPrice("eur"));
 // console.log(getPrice("rub"));
+
+// const account = {
+//   nonce: 186,
+//   balance: 4032522415168559363,
+// };
+
+// console.log(`Balance: ${account.toString()} WEI`); // "Balance: [object Object] WEI"
+
+const getCapsValues = (obj) =>
+  Object.values(obj).map((value) => value.toUpperCase());
+
+console.log(getCapsValues({ body: "Lab Coat" })); // ["LAB COAT"]
+console.log(getCapsValues({ body: "Lab Coat", head: "Sombrero" })); // ["LAB COAT", "SOMBRERO"]
+
+const logEntries = (obj) => {
+  return Object.values(obj);
+};
+
+// Сверьтесь с результатом в консоли
+console.log(logEntries({ body: "Kimono Orange", head: "Backwards Hat Red" }));
+console.log(logEntries({ body: "Puffer Blue", head: "Mohawk Purple" }));
