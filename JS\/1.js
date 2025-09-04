@@ -411,3 +411,38 @@ console.log("Результат:", result); */
 // user[key] = 4;
 // console.log(user[key]);
 // console.log(user.id);
+// const settings = {
+//   theme: "dark",
+//   version: "2.4.1",
+//   beta: false,
+// };
+
+// const keys = Object.keys(settings);
+// console.log(keys); // ["theme", "version", "beta"]
+
+// keys.forEach((key) => {
+//   console.log(settings[key]);
+// });
+// // "Dark"
+// // "2.4.1"
+// // false
+//
+// const getNumberOfKeys = (obj) => Object.keys(obj).length;
+
+// console.log(getNumberOfKeys({ id: 1, name: "Vitalik", country: "Canada" })); // 3
+// console.log(
+//   getNumberOfKeys({
+//     id: 1,
+//     name: "Vitalik",
+//     country: "Canada",
+//     website: "vitalik.ca",
+//   })
+// ); // 4
+// const getCapsKeys = (obj) => {
+//   let a = Object.keys(obj);
+//   return a.map((a) => a.toUpperCase());
+// };
+// const getCapsKeys = (obj) => Object.keys(obj).map((key) => key.toUpperCase());
+
+// console.log(getCapsKeys({ id: 1, name: "Vitalik", country: "Canada" })); // ["ID", "NAME", "COUNTRY"]
+// console.log(getCapsKeys({ id: 1, name: "Vitalik", website: "vitalik.ca" })); // ["ID", "NAME", "WEBSITE"]
