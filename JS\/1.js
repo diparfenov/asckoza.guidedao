@@ -352,3 +352,25 @@ console.log("Результат:", result); */
 
 // console.log(sumPunks([3100, 7804, 5217, 8857])); // 24978
 // console.log(sumPunks([2140, 7252, 2338, 6275])); // 18005
+
+//с return и без
+
+// let funks = [3100, 7804, 5217, 8857]
+// let sumFunks = funks.reduce((acc, cur) => {
+//   return acc + cur
+// }, 0)
+// console.log(sumFunks)
+
+// const sumPunks = punks => {
+//   return punks.reduce((acc,cur) => {
+//     return acc + cur
+//   },0)
+// }
+// console.log(sumPunks([2140, 7252, 2338, 6275]))
+
+// let funks1 = [3100, 7804, 5217, 8857]
+// let sumFunks1 = funks1.reduce((acc, cur) => acc + cur, 0)
+// console.log(sumFunks1)
+
+// const sumPunks1 = punks1 => punks1.reduce((acc,cur) => acc + cur,0)
+// console.log(sumPunks([2140, 7252, 2338, 6275]))
