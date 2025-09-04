@@ -394,3 +394,20 @@ console.log("Результат:", result); */
 
 // console.log(getMinerInfo(["Nanopool", 25])); // "Этот блок замайнил Nanopool за 25 секунд."
 // console.log(getMinerInfo(["Ethermine", 11])); // "Этот блок замайнил Ethermine за 11 секунд."
+// const joinAssets = (wallet1, wallet2) => [...wallet1, ...wallet2];
+
+// console.log(joinAssets(["21 IFY", "18 AAVE"], ["32 MATIC", "73 CRV"])); // ["21 IFY", "18 AAVE", "32 MATIC", "73 CRV"]
+// console.log(joinAssets(["8 DAI", "59 GTC"], ["5 DYDX", "46 SHIB"])); // ["8 DAI", "59 GTC", "5 DYDX", "46 SHIB"]
+
+// const user = {
+//   id: 2,
+//   name: "Nick Szabo",
+//   age: 57,
+// };
+// console.log(user.id);
+// user.id = 3;
+// console.log(user.id);
+// const key = "id";
+// user[key] = 4;
+// console.log(user[key]);
+// console.log(user.id);
