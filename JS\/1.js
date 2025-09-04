@@ -446,3 +446,8 @@ console.log("Результат:", result); */
 
 // console.log(getCapsKeys({ id: 1, name: "Vitalik", country: "Canada" })); // ["ID", "NAME", "COUNTRY"]
 // console.log(getCapsKeys({ id: 1, name: "Vitalik", website: "vitalik.ca" })); // ["ID", "NAME", "WEBSITE"]
+const logValues = (obj) =>
+  Object.keys(obj).forEach((key) => console.log(obj[key]));
+
+logValues({ id: 1, name: "Vitalik", country: "Canada" }); // Выводит в консоль три сообщения: 1, "Vitalik", "Canada"
+logValues({ id: 1, name: "Vitalik", website: "vitalik.ca" }); // Выводит в консоль три сообщения: 1, "Vitalik", "vitalik.ca"
