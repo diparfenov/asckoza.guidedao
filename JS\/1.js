@@ -374,3 +374,23 @@ console.log("Результат:", result); */
 
 // const sumPunks1 = punks1 => punks1.reduce((acc,cur) => acc + cur,0)
 // console.log(sumPunks([2140, 7252, 2338, 6275]))
+// const getBlockReport = (block) => {
+//   const [blockHeight, totalTxs] = block;
+
+//   return `Блок номер ${blockHeight} содержит ${totalTxs} транзакций.`;
+// };
+
+// console.log(getBlockReport([9585604, 110])); // "Блок номер 9585604 содержит 110 транзакций."
+// console.log(getBlockReport([12585603, 185])); // "Блок номер 12585603 содержит 185 транзакций."
+
+// const getBlockReport1 = ([blockHeight, totalTxs]) =>
+//   `Блок номер ${blockHeight} содержит ${totalTxs} транзакций.`;
+
+// console.log(getBlockReport1([12345, 678, 2]));
+// // Блок номер 12345 содержит 678 транзакций.
+
+// const getMinerInfo = ([miner, time]) =>
+//   `Этот блок замайнил ${miner} за ${time} секунд.`;
+
+// console.log(getMinerInfo(["Nanopool", 25])); // "Этот блок замайнил Nanopool за 25 секунд."
+// console.log(getMinerInfo(["Ethermine", 11])); // "Этот блок замайнил Ethermine за 11 секунд."
