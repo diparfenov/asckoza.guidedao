@@ -533,3 +533,11 @@ console.log("Результат:", result); */
 
 // console.log(getRarityScore({ bag: 6189, score: 164.41 }));
 // // "Мешок #6189 имеет 164.41 очков редкости."
+
+// const getRarityScoreRank = ({ bag, score, rank = 0 } = loot) =>
+//   `Мешок #${bag} имеет ${score} очков редкости и занимает ${rank} место в рейтинге.`;
+
+// console.log(getRarityScoreRank({ bag: 6189, score: 164.41, rank: 2372 }));
+// // "Мешок #6189 имеет 164.41 очков редкости и занимает 2372 место в рейтинге."
+// console.log(getRarityScoreRank({ bag: 7498, score: 40.39 })); // rank не указан
+// // "Мешок 7498 имеет 40.39 очков редкости и занимает 0 место в рейтинге."
