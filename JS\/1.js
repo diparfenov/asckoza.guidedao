@@ -591,3 +591,14 @@ console.log("Результат:", result); */
 // };
 
 // console.log(sayHello()); // "Hello Vitalik"
+// const getBalance = (address) => address.balance ?? "N/A";
+
+// // Примеры использования
+// console.log(getBalance({ balance: 42 })); // 42
+// console.log(getBalance({})); // "N/A"
+
+// const getGreeting = (user) => `Привет, ${user.name ?? "аноним"}`;
+
+// // Примеры использования
+// console.log(getGreeting({ name: "Виталик" })); // "Привет, Виталик"
+// console.log(getGreeting({})); // "Привет, аноним"
