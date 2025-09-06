@@ -496,16 +496,40 @@ console.log("Результат:", result); */
 
 // console.log(`Balance: ${account.toString()} WEI`); // "Balance: [object Object] WEI"
 
-const getCapsValues = (obj) =>
-  Object.values(obj).map((value) => value.toUpperCase());
+// const getCapsValues = (obj) =>
+//   Object.values(obj).map((value) => value.toUpperCase());
 
-console.log(getCapsValues({ body: "Lab Coat" })); // ["LAB COAT"]
-console.log(getCapsValues({ body: "Lab Coat", head: "Sombrero" })); // ["LAB COAT", "SOMBRERO"]
+// console.log(getCapsValues({ body: "Lab Coat" })); // ["LAB COAT"]
+// console.log(getCapsValues({ body: "Lab Coat", head: "Sombrero" })); // ["LAB COAT", "SOMBRERO"]
 
-const logEntries = (obj) => {
-  return Object.values(obj);
-};
+// const logEntries = (obj) => {
+//   return Object.values(obj);
+// };
 
-// Сверьтесь с результатом в консоли
-console.log(logEntries({ body: "Kimono Orange", head: "Backwards Hat Red" }));
-console.log(logEntries({ body: "Puffer Blue", head: "Mohawk Purple" }));
+// // Сверьтесь с результатом в консоли
+// console.log(logEntries({ body: "Kimono Orange", head: "Backwards Hat Red" }));
+// console.log(logEntries({ body: "Puffer Blue", head: "Mohawk Purple" }));
+// const account = {
+//   address: "0xFF9...13D7",
+//   type: "contract",
+//   balance: 2,
+// };
+
+// const { address, balance = 0 } = account;
+// console.log(balance); // 0
+
+// const type = "USB-C";
+
+// const account = {
+//   address: "0xFF9...13D7",
+//   type: "contract",
+// };
+
+// const { type: accountType, address } = account;
+// console.log(accountType); // "contract"
+
+// const getRarityScore = ({ bag, score }) =>
+//   `Мешок #${bag} имеет ${score} очков редкости.`;
+
+// console.log(getRarityScore({ bag: 6189, score: 164.41 }));
+// // "Мешок #6189 имеет 164.41 очков редкости."
