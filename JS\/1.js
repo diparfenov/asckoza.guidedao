@@ -559,7 +559,7 @@ console.log("Результат:", result); */
 
 // // Примеры использования
 // console.log(getBalance({ ethereum: { balance: "0.2 ETH" } })); // "0.2 ETH"
-// console.log(getBalance({ ethereum: null })); // undefined
+// console.log(console.log(getBalance({ ethereum: null }));); // undefined
 // console.log(getBalance({})); // undefined
 
 // const getNonce = (tx) => tx.receipt?.details?.nonce;
@@ -573,3 +573,21 @@ console.log("Результат:", result); */
 //     receipt: { details: { nonce: 12 } },
 //   })
 // ); // 12
+// const getFirstCall = (tx) => tx.receipt?.calls?.[0];
+
+// const getBalance = (wallet) => wallet.ethereum?.balance?.toUpperCase();
+
+// // Примеры использования
+// console.log(getBalance({ ethereum: { balance: "0.2 eth" } })); // "0.2 ETH"
+// console.log(getBalance({ ethereum: null })); // undefined
+// console.log(getBalance({})); // undefined
+// const getPlaceholder = () => {
+//   console.log("Вызов getPlaceholder");
+//   return "Anon";
+// };
+
+// const sayHello = (name) => {
+//   return `Hello ${name ?? getPlaceholder()}`;
+// };
+
+// console.log(sayHello()); // "Hello Vitalik"
