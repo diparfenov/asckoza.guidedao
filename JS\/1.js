@@ -541,3 +541,35 @@ console.log("Результат:", result); */
 // // "Мешок #6189 имеет 164.41 очков редкости и занимает 2372 место в рейтинге."
 // console.log(getRarityScoreRank({ bag: 7498, score: 40.39 })); // rank не указан
 // // "Мешок 7498 имеет 40.39 очков редкости и занимает 0 место в рейтинге."
+// const dao = {
+//   members: {
+//     founder: {
+//       address: "0xaf45b3",
+//     },
+//   },
+//   treasury: null,
+// };
+
+// console.log(dao.members?.founder?.address); // "0xaf45b3"
+// console.log(dao.treasury?.value); // undefined
+// console.log(dao.proposals?.template); // undefined
+// console.log(dao.members?.staff?.count); // undefined
+
+// const getBalance = (wallet) => wallet.ethereum?.balance;
+
+// // Примеры использования
+// console.log(getBalance({ ethereum: { balance: "0.2 ETH" } })); // "0.2 ETH"
+// console.log(getBalance({ ethereum: null })); // undefined
+// console.log(getBalance({})); // undefined
+
+// const getNonce = (tx) => tx.receipt?.details?.nonce;
+
+// // Примеры использования
+// console.log(getNonce({ hash: 0x54b7ad, success: false })); // undefined
+// console.log(
+//   getNonce({
+//     hash: 0xa8fe4b,
+//     success: true,
+//     receipt: { details: { nonce: 12 } },
+//   })
+// ); // 12
