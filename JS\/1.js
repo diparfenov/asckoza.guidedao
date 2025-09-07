@@ -755,3 +755,4 @@ console.log("Результат:", result); */
 // ];
 
 // console.log(getDeposits(stakers)); // [4138464, 837184]
+123;
