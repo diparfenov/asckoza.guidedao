@@ -662,3 +662,23 @@ console.log("Результат:", result); */
 //   },
 // ];
 // console.log(assets.map((asset) => asset.id + 1));
+const getBlockGasUsed = (block) =>
+  block.reduce((acc, cur) => acc + cur.gasUsed, 0);
+
+// Пример использования
+const block15034336 = [
+  {
+    gasLimit: 120678,
+    gasUsed: 120678,
+  },
+  {
+    gasLimit: 48594,
+    gasUsed: 29328,
+  },
+  {
+    gasLimit: 145026,
+    gasUsed: 96684,
+  },
+];
+
+console.log(getBlockGasUsed(block15034336)); // 246690
