@@ -608,3 +608,10 @@ console.log("Результат:", result); */
 // console.log(getChainId({ info: { chainId: 31337 } })); // 31337
 // console.log(getChainId({ info: null })); // 0
 // console.log(getChainId({})); // 0
+const getTxValue = (tx) => tx.details?.value?.eth ?? "N/A";
+
+// Примеры использования
+console.log(getTxValue({ hash: 0x1, success: false })); // "N/A"
+console.log(
+  getTxValue({ hash: 0x2, success: true, details: { value: { eth: 0.2 } } })
+); // 0.2
