@@ -602,3 +602,9 @@ console.log("Результат:", result); */
 // // Примеры использования
 // console.log(getGreeting({ name: "Виталик" })); // "Привет, Виталик"
 // console.log(getGreeting({})); // "Привет, аноним"
+// const getChainId = (network) => network?.info?.chainId ?? 0;
+
+// // Примеры использования
+// console.log(getChainId({ info: { chainId: 31337 } })); // 31337
+// console.log(getChainId({ info: null })); // 0
+// console.log(getChainId({})); // 0
