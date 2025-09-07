@@ -662,23 +662,96 @@ console.log("Результат:", result); */
 //   },
 // ];
 // console.log(assets.map((asset) => asset.id + 1));
-const getBlockGasUsed = (block) =>
-  block.reduce((acc, cur) => acc + cur.gasUsed, 0);
+// const getBlockGasUsed = (block) =>
+//   block.reduce((acc, cur) => acc + cur.gasUsed, 0);
 
-// Пример использования
-const block15034336 = [
-  {
-    gasLimit: 120678,
-    gasUsed: 120678,
-  },
-  {
-    gasLimit: 48594,
-    gasUsed: 29328,
-  },
-  {
-    gasLimit: 145026,
-    gasUsed: 96684,
-  },
-];
+// // Пример использования
+// const block15034336 = [
+//   {
+//     gasLimit: 120678,
+//     gasUsed: 120678,
+//   },
+//   {
+//     gasLimit: 48594,
+//     gasUsed: 29328,
+//   },
+//   {
+//     gasLimit: 145026,
+//     gasUsed: 96684,
+//   },
+// ];
 
-console.log(getBlockGasUsed(block15034336)); // 246690
+// console.log(getBlockGasUsed(block15034336)); // 246690
+// const getAverageGasLimit = (block) =>
+//   block.reduce((acc, cur) => acc + cur.gasLimit, 0) / block.length;
+
+// // Пример использования
+// const block15034336 = [
+//   {
+//     gasLimit: 120678,
+//     gasUsed: 120678,
+//   },
+//   {
+//     gasLimit: 48594,
+//     gasUsed: 29328,
+//   },
+//   {
+//     gasLimit: 145026,
+//     gasUsed: 96684,
+//   },
+// ];
+
+// console.log(getAverageGasLimit(block15034336)); // 104766
+// console.log(
+//   (block15034336[0].gasLimit +
+//     block15034336[1].gasLimit +
+//     block15034336[2].gasLimit) /
+//     3
+// );
+// const getTotalFeesPaid = (block) =>
+//   block.reduce((acc, cur) => acc + cur.gas.gasFees.feePaid, 0);
+
+// // Пример использования
+// const block15034523 = [
+//   {
+//     gas: {
+//       gasFees: {
+//         gasPrice: 50.1,
+//         feePaid: 2.52,
+//       },
+//       gasLimit: 120000,
+//       gasUsed: 41309,
+//     },
+//     value: 0,
+//   },
+//   {
+//     gas: {
+//       gasFees: {
+//         gasPrice: 50.1,
+//         feePaid: 1.28,
+//       },
+//       gasLimit: 90000,
+//       gasUsed: 21000,
+//     },
+//     value: 98.21,
+//   },
+// ];
+
+// console.log(getTotalFeesPaid(block15034523)); // 3.8
+// const getDeposits = (stakers) => stakers.map((staker) => staker.deposits);
+
+// // Пример использования
+// const stakers = [
+//   {
+//     entity: "Lido",
+//     deposits: 4138464,
+//     validators: 129327,
+//   },
+//   {
+//     entity: "Kraken",
+//     deposits: 837184,
+//     validators: 26162,
+//   },
+// ];
+
+// console.log(getDeposits(stakers)); // [4138464, 837184]
