@@ -638,3 +638,27 @@ console.log("Результат:", result); */
 // console.log(getTxStatus(tx2)); // Транзакция выполнена успешно!
 // const tx3 = {};
 // console.log(getTxStatus(tx3)); // Транзакция выполнена успешно!
+// const assets = [
+//   {
+//     id: 1,
+//     slug: "bitcoin",
+//     symbol: "BTC",
+//     creator: {
+//       firstName: "Satoshi",
+//       lastName: "Nakamoto",
+//       avatarUrl: null,
+//     },
+//   },
+//   {
+//     id: 2,
+//     slug: "ethereum",
+//     symbol: "ETH",
+//     creator: {
+//       firstName: "Vitalik",
+//       lastName: "Buterin",
+//       avatarUrl:
+//         "https://pbs.twimg.com/profile_images/977496875887558661/L86xyLF4_400x400.jpg",
+//     },
+//   },
+// ];
+// console.log(assets.map((asset) => asset.id + 1));
