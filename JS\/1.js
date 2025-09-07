@@ -622,3 +622,19 @@ console.log("Результат:", result); */
 // console.log(getNetworkName({ info: { name: "Rinkeby" } })); // "rinkeby"
 // console.log(getNetworkName({ info: null })); // "network"
 // console.log(getNetworkName({})); // "network"
+// const getTxStatus = (tx) => {
+//   const notif = {
+//     pending: "Ожидаем подтверждения от сети.",
+//     confirmed: "Пробуем выполнить транзакцию.",
+//     canceled: "Не удалось выполнить транзакцию.",
+//     success: "Транзакция выполнена успешно!",
+//   };
+//   return notif[tx.status] ?? "Статус транзакции недоступен.";
+// };
+
+// const tx1 = { status: "pending" };
+// console.log(getTxStatus(tx1)); // Ожидаем подтверждения от сети.
+// const tx2 = { status: "success" };
+// console.log(getTxStatus(tx2)); // Транзакция выполнена успешно!
+// const tx3 = {};
+// console.log(getTxStatus(tx3)); // Транзакция выполнена успешно!
