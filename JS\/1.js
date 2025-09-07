@@ -608,10 +608,17 @@ console.log("Результат:", result); */
 // console.log(getChainId({ info: { chainId: 31337 } })); // 31337
 // console.log(getChainId({ info: null })); // 0
 // console.log(getChainId({})); // 0
-const getTxValue = (tx) => tx.details?.value?.eth ?? "N/A";
+// const getTxValue = (tx) => tx.details?.value?.eth ?? "N/A";
 
-// Примеры использования
-console.log(getTxValue({ hash: 0x1, success: false })); // "N/A"
-console.log(
-  getTxValue({ hash: 0x2, success: true, details: { value: { eth: 0.2 } } })
-); // 0.2
+// // Примеры использования
+// console.log(getTxValue({ hash: 0x1, success: false })); // "N/A"
+// console.log(
+//   getTxValue({ hash: 0x2, success: true, details: { value: { eth: 0.2 } } })
+// // ); // 0.2
+// const getNetworkName = (network) =>
+//   network?.info?.name.toLowerCase() ?? "network";
+
+// // Примеры использования
+// console.log(getNetworkName({ info: { name: "Rinkeby" } })); // "rinkeby"
+// console.log(getNetworkName({ info: null })); // "network"
+// console.log(getNetworkName({})); // "network"
