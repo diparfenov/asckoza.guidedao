@@ -755,22 +755,38 @@ console.log("Результат:", result); */
 // ];
 
 // console.log(getDeposits(stakers)); // [4138464, 837184]
-class Transaction {
-  constructor(value, isFinalized) {
-    this.value = value;
-    this.isFinalized = isFinalized;
+// class Transaction {
+//   constructor(value, isFinalized) {
+//     this.value = value;
+//     this.isFinalized = isFinalized;
+//   }
+
+//   getDetails() {
+//     if (this.isFinalized) {
+//       return `Перевод ${this.value} wei завершен!`;
+//     } else {
+//       return "Транзакция в процессе...";
+//     }
+//   }
+// }
+
+// const firstTx = new Transaction(100, true);
+// console.log(firstTx.getDetails()); // Перевод 100 wei завершен!
+// const secondTx = new Transaction(999, false);
+// console.log(secondTx.getDetails()); // Транзакция в процессе...
+class Punk {
+  constructor(numb, type) {
+    this.numb = numb;
+    this.type = type;
   }
 
-  getDetails() {
-    if (this.isFinalized) {
-      return `Перевод ${this.value} wei завершен!`;
-    } else {
-      return "Транзакция в процессе...";
-    }
-  }
+  getId = () => `#${this.numb}`;
+  isAlien = () => this.type === "Alien" ?? false;
 }
 
-const firstTx = new Transaction(100, true);
-console.log(firstTx.getDetails()); // Перевод 100 wei завершен!
-const secondTx = new Transaction(999, false);
-console.log(secondTx.getDetails()); // Транзакция в процессе...
+const punk3100 = new Punk(3100, "Alien");
+console.log(punk3100.getId()); // "#3100"
+console.log(punk3100.isAlien()); // true
+const punk5217 = new Punk(5217, "Ape");
+console.log(punk5217.getId()); // "#5217"
+console.log(punk5217.isAlien()); // false
