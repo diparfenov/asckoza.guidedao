@@ -755,4 +755,22 @@ console.log("Результат:", result); */
 // ];
 
 // console.log(getDeposits(stakers)); // [4138464, 837184]
-123;
+class Transaction {
+  constructor(value, isFinalized) {
+    this.value = value;
+    this.isFinalized = isFinalized;
+  }
+
+  getDetails() {
+    if (this.isFinalized) {
+      return `Перевод ${this.value} wei завершен!`;
+    } else {
+      return "Транзакция в процессе...";
+    }
+  }
+}
+
+const firstTx = new Transaction(100, true);
+console.log(firstTx.getDetails()); // Перевод 100 wei завершен!
+const secondTx = new Transaction(999, false);
+console.log(secondTx.getDetails()); // Транзакция в процессе...
