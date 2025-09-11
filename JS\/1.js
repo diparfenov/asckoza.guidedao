@@ -774,19 +774,37 @@ console.log("Результат:", result); */
 // console.log(firstTx.getDetails()); // Перевод 100 wei завершен!
 // const secondTx = new Transaction(999, false);
 // console.log(secondTx.getDetails()); // Транзакция в процессе...
-// class Punk {
-//   constructor(numb, type) {
-//     this.numb = numb;
-//     this.type = type;
-//   }
+constructor() {
+    this.todos = [
+      {
+        title: "Изучить Solidity",
+        category: "работа",
+      },
+      {
+        title: "Продлить Netflix",
+        category: "личное",
+      },
+    ];
+  }
 
-//   getId = () => `#${this.numb}`;
-//   isAlien = () => this.type === "Alien" ?? false;
-// }
+  // Задание: Напишите код для каждого из методов экземпляра
 
-// const punk3100 = new Punk(3100, "Alien");
-// console.log(punk3100.getId()); // "#3100"
-// console.log(punk3100.isAlien()); // true
-// const punk5217 = new Punk(5217, "Ape");
-// console.log(punk5217.getId()); // "#5217"
-// console.log(punk5217.isAlien()); // false
+  getAll = () => this.todos;
+  // Возвращает список задач
+
+  getCount = () => this.todos.length;
+
+  add = (title, category) => this.todos.push({ title, category });
+
+  getWork = () => this.todos.filter((todo) => todo.category === "работа");
+
+  // Возвращает массив объектов, содержащий только рабочие задачи
+
+  getWorkCount = () => this.getWork().length;
+  // Возвращает количество рабочих задач, использует метод getWork()
+
+  getPersonal = () => this.todos.filter((todo) => todo.category === "личное");
+  // Возвращает массив объектов, содержащий только личные задачи
+
+  getPersonalCount = () => this.getWork().length;
+  // Возвращает количество личных задач, использует метод getPersonal()
