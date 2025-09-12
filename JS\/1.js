@@ -866,3 +866,47 @@ console.log("Результат:", result); */
 // const tokenSale = new TokenSale();
 // tokenSale.addToWhitelist().setToken("CVX").applyBoost(5);
 // console.log(tokenSale.amount); // Должен возвращать 10500
+// class User {
+//   constructor(address, balance) {
+//     this.address = address;
+//     this.balance = balance;
+//   }
+//   getBalance = () => this.balance;
+//   getAddress = () => this.address;
+// }
+
+// class Owner extends User {
+//   withdrawEth = () => "Transaction completed";
+// }
+
+// const user = new User("shitty.eth", 7.85);
+// console.log(user.getBalance()); // 7.85
+// console.log(user.getAddress()); // "shitty.eth"
+
+// const owner = new Owner("zeneca.eth", 1.55);
+// console.log(owner.getBalance()); // 1.55
+// console.log(owner.getAddress()); // "zeneca.eth [owner]"
+// console.log(owner.withdrawEth()); // "Transaction completed"
+// class VC {
+//   constructor(name, balance) {
+//     this.name = name;
+//     this.balance = balance;
+//   }
+//   getDeal = () => `${this.name} привлекли ${this.balance}м долларов`;
+// }
+
+// class Multicoin extends VC {
+//   getInvestor = () => "Multicoin Capital";
+// }
+
+// class Dragonfly extends VC {
+//   getInvestor = () => "Dragonfly Capital";
+// }
+
+// const ceramic = new Multicoin("Ceramic Network", 30);
+// console.log(ceramic.getDeal()); // "Ceramic Network привлекли 30м долларов"
+// console.log(ceramic.getInvestor()); // "Multicoin Capital"
+
+// const gelato = new Dragonfly("Gelato Network", 11);
+// console.log(gelato.getDeal()); // "Gelato Network привлекли 11м долларов"
+// console.log(gelato.getInvestor()); // "Dragonfly Capital"
