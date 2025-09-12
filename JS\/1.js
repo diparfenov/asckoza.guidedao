@@ -774,37 +774,95 @@ console.log("Результат:", result); */
 // console.log(firstTx.getDetails()); // Перевод 100 wei завершен!
 // const secondTx = new Transaction(999, false);
 // console.log(secondTx.getDetails()); // Транзакция в процессе...
-constructor() {
-    this.todos = [
-      {
-        title: "Изучить Solidity",
-        category: "работа",
-      },
-      {
-        title: "Продлить Netflix",
-        category: "личное",
-      },
-    ];
-  }
+// constructor() {
+//     this.todos = [
+//       {
+//         title: "Изучить Solidity",
+//         category: "работа",
+//       },
+//       {
+//         title: "Продлить Netflix",
+//         category: "личное",
+//       },
+//     ];
+//   }
 
-  // Задание: Напишите код для каждого из методов экземпляра
+//   // Задание: Напишите код для каждого из методов экземпляра
 
-  getAll = () => this.todos;
-  // Возвращает список задач
+//   getAll = () => this.todos;
+//   // Возвращает список задач
 
-  getCount = () => this.todos.length;
+//   getCount = () => this.todos.length;
 
-  add = (title, category) => this.todos.push({ title, category });
+//   add = (title, category) => this.todos.push({ title, category });
 
-  getWork = () => this.todos.filter((todo) => todo.category === "работа");
+//   getWork = () => this.todos.filter((todo) => todo.category === "работа");
 
-  // Возвращает массив объектов, содержащий только рабочие задачи
+//   // Возвращает массив объектов, содержащий только рабочие задачи
 
-  getWorkCount = () => this.getWork().length;
-  // Возвращает количество рабочих задач, использует метод getWork()
+//   getWorkCount = () => this.getWork().length;
+//   // Возвращает количество рабочих задач, использует метод getWork()
 
-  getPersonal = () => this.todos.filter((todo) => todo.category === "личное");
-  // Возвращает массив объектов, содержащий только личные задачи
+//   getPersonal = () => this.todos.filter((todo) => todo.category === "личное");
+//   // Возвращает массив объектов, содержащий только личные задачи
 
-  getPersonalCount = () => this.getWork().length;
-  // Возвращает количество личных задач, использует метод getPersonal()
+//   getPersonalCount = () => this.getWork().length;
+//   // Возвращает количество личных задач, использует метод getPersonal()
+// class Tasks {
+//   constructor(todos) {
+//     this._todos = todos;
+//   }
+// }
+
+// // Пример использования
+// const tasks = new Tasks(["Выспаться", "Попробовать Zwift"]);
+// console.log(tasks.todos); // "Выспаться, Попробовать Zwift"
+// class Halving {
+//   constructor(totalSupply) {
+//     this.totalSupply = totalSupply;
+//   }
+
+//   cutSupply() {
+//     if (Halving.getVote()) {
+//       this.totalSupply /= 2;
+//     }
+//   }
+
+//   static getVote() {
+//     return Math.random() <= 0.5; // Вероятность 50% на true
+//   }
+// }
+
+// // Пример использования новой версии класса
+// console.log(Halving.getVote()); // Должен вернуть true или false
+// const halving = new Halving(1000000);
+// halving.cutSupply();
+// console.log(halving.totalSupply); // Должен вернуть 1000000 или 500000
+// class TokenSale {
+//   constructor() {
+//     this.amount = 1000;
+//     this.token = "CRV";
+//     this.inWhitelist = false;
+//   }
+
+//   addToWhitelist() {
+//     this.inWhitelist = true;
+//     this.amount *= 10;
+//     return this;
+//   }
+
+//   setToken(symbol) {
+//     this.token = symbol;
+//     return this;
+//   }
+
+//   applyBoost(percent) {
+//     this.amount += (this.amount / 100) * percent;
+//     return this;
+//   }
+// }
+
+// // Пример использования новой версии класса
+// const tokenSale = new TokenSale();
+// tokenSale.addToWhitelist().setToken("CVX").applyBoost(5);
+// console.log(tokenSale.amount); // Должен возвращать 10500
