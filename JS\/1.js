@@ -935,3 +935,39 @@ console.log("Результат:", result); */
 // }
 // const e = new Ether();
 // console.log(e);
+// class User {
+//   constructor(address, balance) {
+//     this.address = address;
+//     this.balance = balance;
+//   }
+
+//   getAddress() {
+//     return this.address;
+//   }
+
+//   getBalance() {
+//     return this.balance;
+//   }
+// }
+
+// class Owner extends User {
+//   getAddress() {
+//     return `${this.address} [owner]`;
+//   }
+
+//   withdrawEth() {
+//     return "Transaction completed";
+//   }
+// }
+
+// const owner = new Owner("zeneca.eth", 1.55);
+// // Текущий экземпляр
+// console.log(owner);
+// // Прототип оунера
+// console.log(owner.__proto__);
+// // Прототип юзера
+// console.log(owner.__proto__.__proto__);
+// // Прототип Object
+// console.log(owner.__proto__.__proto__.__proto__);
+// // null
+// console.log(owner.__proto__.__proto__.__proto__.__proto__);
