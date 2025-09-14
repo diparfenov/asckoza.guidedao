@@ -910,3 +910,6 @@ console.log("Результат:", result); */
 // const gelato = new Dragonfly("Gelato Network", 11);
 // console.log(gelato.getDeal()); // "Gelato Network привлекли 11м долларов"
 // console.log(gelato.getInvestor()); // "Dragonfly Capital"
+// export default class Wallet {
+//   // Сделать: constructor, addCoin() и getBalance()
+// }
