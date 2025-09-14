@@ -998,3 +998,32 @@ console.log("Результат:", result); */
 // airDrop.setPhase("two").applyPointsBoost(5350060).applyNFTBoost();
 
 // console.log(airDrop);
+// class AirDrop {
+//   #amount = 10000;
+//   #phase = "one";
+//   #hasNFTBoost = false;
+
+//   applyNFTBoost() {
+//     this.#hasNFTBoost = true;
+//     this.#amount = this.#amount * 1.2;
+//     return this;
+//   }
+
+//   setPhase(phase) {
+//     this.#phase = phase;
+//     return this;
+//   }
+
+//   applyPointsBoost(points) {
+//     this.#amount = this.#amount + points / 100;
+//     return this;
+//   }
+
+//   getAmount() {
+//     return this.#amount;
+//   }
+// }
+
+// // Пример использования
+// const airDrop = new AirDrop();
+// console.log(airDrop.setPhase("two").applyPointsBoost(5350060).applyNFTBoost());
