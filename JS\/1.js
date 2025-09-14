@@ -913,3 +913,25 @@ console.log("Результат:", result); */
 // export default class Wallet {
 //   // Сделать: constructor, addCoin() и getBalance()
 // }
+// class Coin {
+//   // Сделать: constructor, collect(), getValue(), getMessage()
+//   constructor(name, price, count) {
+//     this.name = name;
+//     this.price = price;
+//     this.count = count;
+//   }
+
+//   collect = () => this.count++;
+//   getValue = () => this.count * this.price;
+//   getMessage = () => `${this.count} ${this.name} в кошельке`;
+// }
+
+// class Ether extends Coin {
+//   constructor() {
+//     super("Ethereum", 3000);
+//   }
+
+//   // Сделать: constructor и наследование
+// }
+// const e = new Ether();
+// console.log(e);
