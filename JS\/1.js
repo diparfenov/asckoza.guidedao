@@ -1027,3 +1027,4 @@ console.log("Результат:", result); */
 // // Пример использования
 // const airDrop = new AirDrop();
 // console.log(airDrop.setPhase("two").applyPointsBoost(5350060).applyNFTBoost());
+//Повторил все и добавил новые пункты по JS в файл
