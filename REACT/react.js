@@ -92,3 +92,15 @@
 
 // const root = document.querySelector("#root");
 // createRoot(root).render(showAlerts());
+// import { createRoot } from "react-dom/client";
+
+// const payNow = (user = { id: 1, login: true }) => {
+//     let name = "disabled";
+//     if (user.login) {
+//       name = "active";
+//     }
+
+//     return <button className={name}>Оплатить</button>;
+//   }
+// const root = document.querySelector("#root");
+// createRoot(root).render(payNow());
