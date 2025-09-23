@@ -60,3 +60,12 @@
 // );
 // const root = document.querySelector("#root");
 // createRoot(root).render(element);
+// import { createRoot } from "react-dom/client";
+
+// const element = (
+//   <p className="exotic" tabindex="2">
+//     People don't come to see the tigers, they come to see me.
+//   </p>
+// );
+// const root = document.querySelector("#root");
+// createRoot(root).render(element);
