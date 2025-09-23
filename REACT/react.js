@@ -51,3 +51,12 @@
 // const app = React.createElement(React.Fragment, null, element, banner);
 
 // createRoot(root).render(app);
+// import { createRoot } from "react-dom/client";
+
+// const element = (
+//   <p>
+//     <b>I saw the tiger, and the tiger saw a man</b>
+//   </p>
+// );
+// const root = document.querySelector("#root");
+// createRoot(root).render(element);
