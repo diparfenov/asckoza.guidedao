@@ -21,3 +21,20 @@
 
 // console.log(onlyPositive1(numbers1));
 // console.log(onlyPositive2(numbers2));
+
+// function createCard() {
+//   const card = document.createElement("div");
+//   card.className = "card";
+//   return card;
+// }
+// console.log(createCard());
+
+// import "./styles.css";
+// import React from "react";
+
+// export default function App() {
+//   const cactusDiv = () => React.createElement("div", null, "Cactus Jack");
+//   const astroGreeting = () =>
+//     React.createElement("h1", { className: "first" }, "Welcome to Astroworld");
+//   return cactusDiv(), astroGreeting();
+// }
