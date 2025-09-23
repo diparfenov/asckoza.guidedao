@@ -69,3 +69,15 @@
 // );
 // const root = document.querySelector("#root");
 // createRoot(root).render(element);
+// const userStatus = (login) =>
+//   login ? `<span>Вы залогинены</span>` : `<a href="/auth">Войти</a>`;
+
+// console.log(userStatus(false));
+// console.log(userStatus(!false));
+
+// import { createRoot } from "react-dom/client";
+
+// const greetUser = (user = {name: "Джо", age: 57}) => <div>Привет, {user.name}!</div>;
+
+// const root = document.querySelector("#root");
+// createRoot(root).render(greetUser());
