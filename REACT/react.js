@@ -81,3 +81,14 @@
 
 // const root = document.querySelector("#root");
 // createRoot(root).render(greetUser());
+// import { createRoot } from "react-dom/client";
+
+// const showAlerts = (
+//   user = [
+//     { id: 1, text: "Оплата получена" },
+//     { id: 2, text: "Заказ отправлен" },
+//   ]
+// ) => <p>Уведомлений: {user.length}</p>;
+
+// const root = document.querySelector("#root");
+// createRoot(root).render(showAlerts());
