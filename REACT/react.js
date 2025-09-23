@@ -38,3 +38,16 @@
 //     React.createElement("h1", { className: "first" }, "Welcome to Astroworld");
 //   return cactusDiv(), astroGreeting();
 // }
+// import React from "react";
+// import { createRoot } from "react-dom/client";
+// import "./styles.css";
+// const root = document.querySelector("#root");
+
+// const element = React.createElement("h1", { className: "zag" }, "Yo!");
+
+// const banner = React.createElement("h1", {}, "Welcome to Astroworld");
+
+// // Рендерим оба элемента через React Fragment
+// const app = React.createElement(React.Fragment, null, element, banner);
+
+// createRoot(root).render(app);
