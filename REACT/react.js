@@ -156,3 +156,37 @@
 
 // const root = document.querySelector("#root");
 // createRoot(root).render(<SiteFooter />);
+// const CustomerBasket = (props) => (
+//   <div>Товаров в корзине: {props.quantity}</div>
+// );
+
+// const root = document.querySelector("#root");
+// createRoot(root).render(<CustomerBasket quantity="3" />);
+// const Navbar = (props) => (
+//   <>
+//     <div>
+//       Привет, {props.user.first_name} {user.last_name}
+//     </div>
+//     <p>У вас {props.alerts.length} уведомлений</p>
+//   </>
+// );
+
+// let a = [
+//   {
+//     id: 1,
+//     text: "Оплата получена",
+//   },
+//   {
+//     id: 2,
+//     text: "Заказ отправлен",
+//   },
+// ];
+
+// const user = {
+//   first_name: "Павел",
+//   last_name: "Топский",
+// };
+
+// const root = document.querySelector("#root");
+
+// createRoot(root).render(<Navbar alerts={a} user={user} />);
