@@ -131,3 +131,28 @@
 
 // const root = document.querySelector("#root");
 // createRoot(root).render(<DropdownMenu />);
+// const DropdownMenu = () => (
+//   <ul className="payment-methods">
+//     <li className="dropdown" id="user-menu">
+//       Профиль
+//     </li>
+//     <li className="dropdown" id="user-menu" children="Заказы" />
+//     <li className="logout" id="user-menu">
+//       Выйти
+//     </li>
+//   </ul>
+// );
+// const SiteFooter = () => (
+//   <>
+//     <h3>Официальный магазин Джо Экзотика</h3>
+//     <ul>
+//       <li>Написать Джо</li>
+//       <li>Условия доставки</li>
+//       <li>Поддержка</li>
+//     </ul>
+//     <p>ООО «Джо Экзотик»</p>
+//   </>
+// );
+
+// const root = document.querySelector("#root");
+// createRoot(root).render(<SiteFooter />);
