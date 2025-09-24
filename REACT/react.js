@@ -104,3 +104,30 @@
 //   }
 // const root = document.querySelector("#root");
 // createRoot(root).render(payNow());
+// function paymentMethod(method) {
+//   return <li className={`payment-method option-${method}`}>{method}</li>;
+// }
+// console.log(paymentMethod("visa"));
+// const getList = () => {
+//   return (
+//     <ul>
+//       <li>One</li>
+//       <li>Two</li>
+//     </ul>
+//   );
+// };
+// console.log(getList());
+// const DropdownMenu = () => (
+//   <ul className="payment-methods">
+//     <li className="dropdown" id="user-menu">
+//       Профиль
+//     </li>
+//     <li className="dropdown" id="user-menu" children="Заказы" />
+//     <li className="logout" id="user-menu">
+//       Выйти
+//     </li>
+//   </ul>
+// );
+
+// const root = document.querySelector("#root");
+// createRoot(root).render(<DropdownMenu />);
