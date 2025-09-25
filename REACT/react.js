@@ -197,3 +197,10 @@
 // const root = document.querySelector("#root");
 
 // createRoot(root).render(<Button>Login</Button>);
+// function Button({ children, className }) {
+//   return <button className={className}>{children}</button>;
+// }
+
+// const root = document.querySelector("#root");
+
+// createRoot(root).render(<Button className="primary">Login</Button>);
