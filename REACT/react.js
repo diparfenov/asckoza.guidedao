@@ -204,3 +204,24 @@
 // const root = document.querySelector("#root");
 
 // createRoot(root).render(<Button className="primary">Login</Button>);
+// import {createRoot} from "react-dom";
+
+// function Order(props) {
+//   const name = `${props.item.brand} ${props.item.model}`;
+
+// return (<div>
+//   Кроссовки {name}.<br />
+//   Осталось {props.item.quantity - 1} пар.
+// </div>);
+// }
+
+// const item = {
+//   brand: "adidas YEEZY",
+//   model: "Boost 700 V2",
+//   quantity: 3
+// }
+
+// createRoot(document.querySelector("#root")).render(<>
+//   <Order item={item} />
+//   <Order item={item} />
+// </>);
