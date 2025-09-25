@@ -190,3 +190,10 @@
 // const root = document.querySelector("#root");
 
 // createRoot(root).render(<Navbar alerts={a} user={user} />);
+// function Button(props) {
+//   return <button>{props.children}</button>;
+// }
+
+// const root = document.querySelector("#root");
+
+// createRoot(root).render(<Button>Login</Button>);
