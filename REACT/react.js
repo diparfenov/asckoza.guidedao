@@ -258,3 +258,18 @@
 //     <Header theme="night" />
 //   </>
 // );
+// function Header(props) {
+//   const className = clsx({
+//     light: props.theme === "day",
+//     dark: props.theme === "night",
+//     header: true,
+//   });
+//   return <h1 className={className}>{className}Maison Martin Margiela</h1>;
+// }
+
+// createRoot(document.querySelector("#root")).render(
+//   <>
+//     <Header theme="day" />
+//     <Header theme="night" />
+//   </>
+// );
