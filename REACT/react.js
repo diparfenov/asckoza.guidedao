@@ -225,3 +225,25 @@
 //   <Order item={item} />
 //   <Order item={item} />
 // </>);
+// function Raffle(props) {
+//   const newObj = { ...props, c: 3 };
+//   console.log(newObj.c);
+
+//   if (props.item) {
+//     return <h1>Цвет: {newObj.item.c}</h1>;
+//   }
+//   return null;
+// }
+
+// const item = {
+//   brand: "adidas YEEZY",
+//   model: "Boost 700 V2",
+//   color: "Tephra",
+// };
+
+// createRoot(document.querySelector("#root")).render(
+//   <>
+//     <Raffle item={item} />
+//     <Raffle />
+//   </>
+// );
