@@ -247,3 +247,14 @@
 //     <Raffle />
 //   </>
 // );
+// function Header(props) {
+//   const result = props.theme == "day" ? "light" : "dark";
+//   return <h1 className={result}>Maison Martin Margiela</h1>;
+// }
+
+// createRoot(document.querySelector("#root")).render(
+//   <>
+//     <Header theme="day" />
+//     <Header theme="night" />
+//   </>
+// );
