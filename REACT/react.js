@@ -294,3 +294,17 @@
 //   const [name, age] = boomer;
 //   return `${name} скоро стукнет ${age + 1} лет`;
 // }
+// function offWhite() {
+//   const item = "SCULPTURE";
+//   function inQuotes() {
+//     return `"${item}"`;
+//   }
+//   return [item, inQuotes];
+// }
+
+// function destructureIt() {
+//   const [item, inQuotes] = offWhite();
+//   return [item, inQuotes()];
+// }
+
+// console.log(destructureIt());
