@@ -308,3 +308,9 @@
 // }
 
 // console.log(destructureIt());
+// function Item() {
+//   [quanity, setQuanity] = useState(0);
+//   return <div>Количество товаров: {quanity}</div>;
+// }
+
+// createRoot(document.querySelector("#root")).render(<Item />);
