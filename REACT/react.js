@@ -330,3 +330,14 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Paccbet />);
+// function Counter() {
+//   let [count, setCount] = useState(0);
+//   return (
+//     <>
+//       <div>Кликов: {count}</div>
+//       <button onClick={() => setCount(count + 1)}>+1</button>
+//     </>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Counter />);
