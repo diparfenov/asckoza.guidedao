@@ -314,3 +314,19 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Item />);
+// function Pomodoro() {
+//   const [mins, setMins] = useState(25);
+//   return (
+//     <>
+//       <h2>Продолжительность сессии: {mins}</h2>
+//       <button onClick={() => setMins(mins + 1)}>Добавить минуту</button>
+//     </>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Pomodoro />);
+// function Paccbet() {
+//   return <button onClick={() => console.log("АЛО")}>Click Clack</button>;
+// }
+
+// createRoot(document.querySelector("#root")).render(<Paccbet />);
