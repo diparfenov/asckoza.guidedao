@@ -290,3 +290,7 @@
 // console.log(born); //1963
 // console.log(nba); //{ team: 'Chicago Bulls', number: 23 }
 // const getFullName = ([first, last]) => `${first} ${last}`;
+// function playVanga(boomer) {
+//   const [name, age] = boomer;
+//   return `${name} скоро стукнет ${age + 1} лет`;
+// }
