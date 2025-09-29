@@ -275,3 +275,18 @@
 // );
 // Разобрался с  rest = { c: 3, d: 4 } в <div c={3} d={4}></div>
 // Разобрался с clxs
+// const profile = [
+//   "Michael Jordan",
+//   1963,
+//   {
+//     team: "Chicago Bulls",
+//     number: 23,
+//   },
+// ];
+
+// const [name, born, nba] = profile;
+
+// console.log(name); //Michael Jordan
+// console.log(born); //1963
+// console.log(nba); //{ team: 'Chicago Bulls', number: 23 }
+// const getFullName = ([first, last]) => `${first} ${last}`;
