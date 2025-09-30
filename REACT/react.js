@@ -377,3 +377,14 @@
 // }
 
 // console.log(getUser(32));
+// function Coffee() {
+//   return (
+//     <select onChange={() => console.log("Он или оно")} className="brands">
+//       <option>Illy</option>
+//       <option>Lavazza</option>
+//       <option>Danesi</option>
+//     </select>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Coffee />);
