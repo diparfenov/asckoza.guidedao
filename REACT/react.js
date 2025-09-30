@@ -341,3 +341,16 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Counter />);
+// function getDeity() {
+//   const name = "Omon Ra";
+
+//   function getMantra() {
+//     return `Sa Ta Na Ma ${name}`;
+//   }
+
+//   return {
+//     name: name,
+//     mantra: getMantra(),
+//   };
+// }
+// console.log(getDeity());
