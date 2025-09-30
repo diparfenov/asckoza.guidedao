@@ -367,3 +367,13 @@
 // }
 
 // console.log(getDeity("Omon", "Ra"));
+// function getUser(age) {
+//   function isOld() {
+//     return age >= 30;
+//   }
+//   return {
+//     old: isOld(),
+//   };
+// }
+
+// console.log(getUser(32));
