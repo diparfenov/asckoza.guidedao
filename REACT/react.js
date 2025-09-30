@@ -388,3 +388,23 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Coffee />);
+// function Elevator() {
+//   const [count, setCount] = useState(0);
+
+//   function handleAddClick() {
+//     if (count < 7) {
+//       setCount(count + 1);
+//     }
+//   }
+
+//   return (
+//     <>
+//       <h2>{count} пассажиров в лифте</h2>
+//       <button disabled={count == 7} onClick={handleAddClick}>
+//         +1 пассажир
+//       </button>
+//     </>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Elevator />);
