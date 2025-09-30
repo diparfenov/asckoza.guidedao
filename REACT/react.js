@@ -388,23 +388,34 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Coffee />);
-// function Elevator() {
-//   const [count, setCount] = useState(0);
-
-//   function handleAddClick() {
-//     if (count < 7) {
-//       setCount(count + 1);
-//     }
-//   }
-
+// // function Profile({ courses }) {
 //   return (
 //     <>
-//       <h2>{count} пассажиров в лифте</h2>
-//       <button disabled={count == 7} onClick={handleAddClick}>
-//         +1 пассажир
-//       </button>
+//       <h2>Хороший день для учебы!</h2>
+
+//       {courses.length > 1 && <p>Вам доступно {courses.length} курсов</p>}
 //     </>
 //   );
 // }
 
-// createRoot(document.querySelector("#root")).render(<Elevator />);
+// const courses = [
+//   {
+//     id: 1,
+//     text: "HTML/CSS",
+//   },
+//   {
+//     id: 2,
+//     text: "JavaScript",
+//   },
+//   {
+//     id: 3,
+//     text: "React",
+//   },
+// ];
+
+// createRoot(document.querySelector("#root")).render(
+//   <>
+//     <Profile courses={[]} />
+//     <Profile courses={courses} />{" "}
+//   </>
+// );
