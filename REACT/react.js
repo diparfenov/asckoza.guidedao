@@ -354,3 +354,16 @@
 //   };
 // }
 // console.log(getDeity());
+// function getDeity(first, last) {
+//   function getFull() {
+//     return `${first + " " + last}`;
+//   }
+
+//   return {
+//     first: first,
+//     last: last,
+//     full: getFull(),
+//   };
+// }
+
+// console.log(getDeity("Omon", "Ra"));
