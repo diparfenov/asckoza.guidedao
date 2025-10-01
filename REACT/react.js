@@ -420,3 +420,20 @@
 //   </>
 // );
 //react 36% new practice
+// export default function App() {
+//   const [login, setLogin] = useState(false);
+//   const handleSetLogin = () => {
+//     setLogin(login ? false : true);
+//   };
+
+//   return (
+//     <>
+//       <h2 className="ui-title">
+//         {login ? "Добро пожаловать!" : "Нужно залогиниться!"}
+//       </h2>
+//       <button className="ui-button" onClick={handleSetLogin}>
+//         {login ? "Выйти" : "Войти"}
+//       </button>
+//     </>
+//   );
+// }
