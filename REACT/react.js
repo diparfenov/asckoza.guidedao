@@ -419,3 +419,4 @@
 //     <Profile courses={courses} />{" "}
 //   </>
 // );
+//react 36% new practice
