@@ -528,3 +528,19 @@
 // const bases = ["Гуанин", "Цитозин", "Тимин"];
 // const dna = addBase(bases, "Аденин");
 // console.log(dna);
+// const change = (players, starter, bench) => {
+//   return players.map((player) => {
+//     if (starter === player) {
+//       return bench;
+//     }
+//     return player;
+//   });
+// };
+
+// const change2 = (players, starter, bench) =>
+//   players.map((player) => (starter === player ? bench : player));
+
+// //пример использования
+// const firstHalf = ["Jordan", "Pippen", "Rodman", "Kukoc"];
+// const secondHalf = change(firstHalf, "Jordan", "Harper");
+// console.log(secondHalf);
