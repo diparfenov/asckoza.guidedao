@@ -493,3 +493,27 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Blaster />);
+// function clone() {
+//   const cell = ["Лизосома", "Рибосома", "Аппарат Гольджи"];
+//   const copy = cell;
+//   console.log(copy);
+//   console.log(cell);
+//   cell.push("Митохондрия");
+//   console.log(copy);
+//   console.log(cell);
+//   return cell === copy;
+// }
+// console.log(clone());
+
+// function sideEffects() {
+//   const metformin = {
+//     diarrhea: "common",
+//     drowsiness: "rare",
+//   };
+//   const glucophage = metformin;
+//   glucophage.cramping = "common";
+//   const siofor = glucophage;
+//   return siofor;
+// }
+
+// console.log(sideEffects());
