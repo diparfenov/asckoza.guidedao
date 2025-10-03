@@ -517,3 +517,14 @@
 // }
 
 // console.log(sideEffects());
+// const addBull = (bulls, bull) => [...bulls, bull];
+
+// const bulls = ["Jordan", "Pippen", "Rodman"];
+// const newBulls = addBull(bulls, "Kukoc");
+
+// console.log(newBulls);
+// const addBase = (bases, base) => [base, ...bases];
+
+// const bases = ["Гуанин", "Цитозин", "Тимин"];
+// const dna = addBase(bases, "Аденин");
+// console.log(dna);
