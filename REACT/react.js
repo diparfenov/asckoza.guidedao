@@ -460,3 +460,36 @@
 // };
 //сделал проект 3
 //начинаю дальше реакт 36%
+// function Blaster() {
+//   const [ammo, setAmmo] = useState(10);
+//   const [magazine, setMagazine] = useState(3);
+//   const [disabled, setDisabled] = useState(false);
+
+//   const magazinePull = () => {
+//     if (magazine === 0) {
+//       setDisabled(!disabled);
+//     } else {
+//       setMagazine(magazine - 1);
+//     }
+//   };
+
+//   function handleShootClick() {
+//     setAmmo(ammo - 1);
+//     if (ammo === 1) {
+//       setAmmo(10);
+//       magazinePull();
+//     }
+//   }
+
+//   return (
+//     <>
+//       <h2>Зарядов: {ammo}</h2>
+//       <h2>Обойм: {magazine}</h2>
+//       <button disabled={disabled} onClick={handleShootClick}>
+//         Выстрелить
+//       </button>
+//     </>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Blaster />);
