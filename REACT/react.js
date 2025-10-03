@@ -544,3 +544,9 @@
 // const firstHalf = ["Jordan", "Pippen", "Rodman", "Kukoc"];
 // const secondHalf = change(firstHalf, "Jordan", "Harper");
 // console.log(secondHalf);
+// const removeDj = (lineup, out) => lineup.filter((line) => line !== out);
+
+// //пример использования
+// const oldLineup = ["Jaar", "Villalobos", "Hawtin", "Allien"];
+// const newLineup = removeDj(oldLineup, "Villalobos");
+// console.log(newLineup);
