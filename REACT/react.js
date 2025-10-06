@@ -600,3 +600,11 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Pomodoro />);
+// const checkFake = (item, fake) => ({ ...item, fake });
+// //пример использования
+// const cap = {
+//   brand: "Supreme",
+//   condition: "like new",
+// };
+// const forSale = checkFake(cap, false);
+// console.log(forSale);
