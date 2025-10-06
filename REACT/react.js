@@ -561,3 +561,16 @@
 // //пример использования
 // const pharmas = ["AstraZeneca", "Novartis", "Pfizer", "Abbott"];
 // createRoot(document.querySelector("#root")).render(<Pharmas names={pharmas} />);
+// function Standards() {
+//   const [gens, setGens] = useState(["GSM", "3G", "LTE", "5G"]);
+
+//   return (
+//     <ul>
+//       {gens.map((gen) => (
+//         <li key={gen}>{gen}</li>
+//       ))}
+//     </ul>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Standards />);
