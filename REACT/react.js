@@ -642,3 +642,31 @@
 // };
 // const nomeat = goVegan(burger);
 // console.log(nomeat);
+// const user = {
+//   mode: "dark",
+//   role: "admin",
+// };
+
+// const list = Object.entries(user).map((i) => {
+//   return (
+//     <li key={i[0]}>
+//       {i[0]}: {i[1]}
+//     </li>
+//   );
+// });
+
+// console.log(list);
+//function Checkout(props) {
+//   return (
+//     <form>
+//       <input
+//         defaultValue={props.x}
+//         onChange={(event) => console.log(event.target.value)}
+//         name="name"
+//         type="number"
+//       />
+//     </form>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Checkout x={123} />);
