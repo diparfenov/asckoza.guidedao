@@ -550,3 +550,14 @@
 // const oldLineup = ["Jaar", "Villalobos", "Hawtin", "Allien"];
 // const newLineup = removeDj(oldLineup, "Villalobos");
 // console.log(newLineup);
+// const Pharmas = ({ names }) => (
+//   <ul>
+//     {names.map((name) => (
+//       <li key={name}>{name}</li>
+//     ))}
+//   </ul>
+// );
+
+// //пример использования
+// const pharmas = ["AstraZeneca", "Novartis", "Pfizer", "Abbott"];
+// createRoot(document.querySelector("#root")).render(<Pharmas names={pharmas} />);
