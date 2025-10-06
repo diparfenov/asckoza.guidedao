@@ -608,3 +608,37 @@
 // };
 // const forSale = checkFake(cap, false);
 // console.log(forSale);
+// const addTimestamp = (cargo) => ({ ...cargo, timestamp: Date.now() });
+
+// //пример использования
+// const cargo = {
+//   from: "Bogota, Colombia",
+//   weight: "20kg",
+// };
+// const received = addTimestamp(cargo);
+// console.log(received);
+// function giftSub(user) {
+//   return { ...user, role: "subscriber" };
+// }
+
+// //пример использования
+// const user = {
+//   name: "Sharishaxd",
+//   role: "follower",
+// };
+// const sub = giftSub(user);
+// console.log(sub);
+
+// function goVegan(dish) {
+//   const { meat, ...womeat } = dish;
+//   return womeat;
+// }
+
+// //пример использования
+// const burger = {
+//   bun: "Чиабатта",
+//   toppings: "Экстра",
+//   meat: "Говядина",
+// };
+// const nomeat = goVegan(burger);
+// console.log(nomeat);
