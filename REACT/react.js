@@ -574,3 +574,29 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Standards />);
+
+// function Pomodoro() {
+//   const [sessions, setSessions] = useState([]);
+
+//   const handleWorkClick = () => setSessions([...sessions, 25]);
+
+//   const handleBreakClick = () => setSessions([...sessions, 5]);
+
+//   const handleResetClick = () => setSessions([]);
+
+//   const value = sessions.reduce((acc, value) => acc + value, 0);
+
+//   const list = sessions.map((session, index) => <li key={index}>{session}</li>);
+
+//   return (
+//     <>
+//       <button onClick={handleWorkClick}>Поработать</button>
+//       <button onClick={handleBreakClick}>Отдохнуть</button>
+//       <h2>Всего: {value}</h2>
+//       <button onClick={handleResetClick}>Сброс</button>
+//       <ol>{list}</ol>
+//     </>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Pomodoro />);
