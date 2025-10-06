@@ -670,3 +670,19 @@
 // }
 
 // createRoot(document.querySelector("#root")).render(<Checkout x={123} />);
+//function App() {
+//   const [city, setCity] = useState("Kaliningrad");
+//   return (
+//     <>
+//       <input
+//         type="text"
+//         name="city"
+//         value={city}
+//         onChange={(e) => setCity(e.target.value)}
+//       />
+//       <p>{city}</p>
+//     </>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<App />);
