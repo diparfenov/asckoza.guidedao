@@ -687,3 +687,4 @@
 
 // createRoot(document.querySelector("#root")).render(<App />);
 //делал практику
+//доделал пракитку
