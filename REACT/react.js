@@ -688,3 +688,67 @@
 // createRoot(document.querySelector("#root")).render(<App />);
 //делал практику
 //доделал пракитку
+// export default function Shop() {
+//   const [items, setItems] = useState([]);
+//   const [name, setName] = useState("");
+//   const [desc, setDesc] = useState("");
+
+//   const handleFormSubmit = (e) => {
+//     e.preventDefault(); // предотвращаем перезагрузку страницы
+//     addItem(); // вызываем функцию добавления
+//     setName(""); // очищаем поля
+//     setDesc(""); // очищаем поля
+//   };
+//   const isInvalid = name === "" || desc === "";
+//   const addItem = () => setItems([...items, { id: items.length, name, desc }]);
+//   const delItem = (id) => setItems(items.filter((item) => item.id !== id));
+
+//   return (
+//     <>
+//       <form onSubmit={handleFormSubmit}>
+//         <div>
+//           <input
+//             type="text"
+//             placeholder="Название товара"
+//             className="ui-textfield"
+//             onChange={(e) => setName(e.target.value)}
+//             value={name}
+//           />
+//         </div>
+//         <div>
+//           <input
+//             type="text"
+//             placeholder="Описание товара"
+//             className="ui-textfield"
+//             onChange={(e) => setDesc(e.target.value)}
+//             value={desc}
+//           />
+//         </div>
+//         <div className="form-footer">
+//           {isInvalid && <div className="validation">Заполните все поля</div>}
+//           <input
+//             disabled={isInvalid}
+//             type="submit"
+//             className="ui-button"
+//             value="Добавить"
+//           />
+//         </div>
+//       </form>
+
+//       <div>
+//         {items.length == 0 && <p className="ui-title">Добавьте первый товар</p>}
+//       </div>
+
+//       <ul className="ui-list">
+//         {items.map((item) => (
+//           <li key={item.id} className="ui-item-list">
+//             <Item info={item} />
+//             <button onClick={() => delItem(item.id)} className="item-button">
+//               Удалить
+//             </button>
+//           </li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// }
