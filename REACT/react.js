@@ -758,3 +758,24 @@
 //опять не успел
 // опять
 //продолжил теперь проект
+// начал проект и все обновил по знанияя, половину сделал уже
+// import Item from "./item.js";
+// export default function ItemList(props) {
+//   const { items, onDelItem } = props;
+//   // мы получили из пропсов функцию onDelItem в которую передали delItem
+//   // и массив items в который передали массив всех добавленных товаров
+//   return (
+//     <>
+//       <ul className="ui-list">
+//         {items.map((item) => (
+//           <li key={item.id} className="ui-item-list">
+//             <Item info={item} />
+//             <button onClick={() => onDelItem(item.id)} className="item-button">
+//               Удалить
+//             </button>
+//           </li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// }
