@@ -1,32 +1,26 @@
 import { useState, useEffect } from "react";
-import { createRoot } from "react-dom/client";
 import "./App.css";
 
 function App() {
-  const [fast, setFast] = useState(18);
+  const [items, setItems] = useState([]);
   useEffect(() => {
-    document.title = `Фастинг: ${fast} часов`;
+    if (items.length === 0) {
+      document.title = `Добавьте первый товар`;
+    } else if (items.length === 1) {
+      document.title = `Добавлен один товар`;
+    } else {
+      document.title = `Добавлено ${items.length} товаров`;
+    }
   });
 
-  function handleMoreClick() {
-    if (fast < 23) {
-      setFast((prev) => prev + 1);
-    }
-  }
-
-  function handleLessClick() {
-    if (fast > 16) {
-      setFast((prev) => prev - 1);
-    }
+  function handleButtonClick() {
+    setItems([...items, { id: items.length }]);
   }
 
   return (
     <>
-      <h2>
-        Схема фастинга: {fast} / {24 - fast}
-      </h2>
-      <button onClick={handleMoreClick}>+</button>
-      <button onClick={handleLessClick}>-</button>
+      <h2>Всего товаров: {items.length}</h2>
+      <button onClick={handleButtonClick}>Добавить товар</button>
     </>
   );
 }
