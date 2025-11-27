@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import { createRoot } from "react-dom/client";
+import "./App.css";
 
 function App() {
+  const [fast, setFast] = useState(18);
+  useEffect(() => {
+    document.title = `Фастинг: ${fast} часов`;
+  });
+
+  function handleMoreClick() {
+    if (fast < 23) {
+      setFast((prev) => prev + 1);
+    }
+  }
+
+  function handleLessClick() {
+    if (fast > 16) {
+      setFast((prev) => prev - 1);
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2>
+        Схема фастинга: {fast} / {24 - fast}
+      </h2>
+      <button onClick={handleMoreClick}>+</button>
+      <button onClick={handleLessClick}>-</button>
+    </>
   );
 }
 
