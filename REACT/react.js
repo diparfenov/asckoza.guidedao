@@ -805,3 +805,27 @@
 //yt ltkfk
 //начал
 //сделал практику 3
+// function Blaster() {
+//   const [ammo, setAmmo] = useState(10);
+//   const [mag, setMag] = useState(3);
+
+//   function handleShootClick() {
+//     ammo > 0
+//       ? setAmmo((prev) => prev - 1)
+//       : (setMag((prev) => prev - 1), setAmmo((prev) => prev + 10));
+//   }
+
+//   return (
+//     <>
+//       <h2>Зарядов: {ammo}</h2>
+//       <h2>Обойм: {mag}</h2>
+//       {!mag == 0 && (
+//         <button onClick={handleShootClick}>
+//           {ammo == 0 ? "Перезарядка" : "Выстрелить"}
+//         </button>
+//       )}
+//     </>
+//   );
+// }
+
+// createRoot(document.querySelector("#root")).render(<Blaster />);
