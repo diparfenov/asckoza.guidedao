@@ -831,3 +831,4 @@
 // createRoot(document.querySelector("#root")).render(<Blaster />);
 //47
 // начал
+//делаю практику в решение не полез чат гпт подсказал
