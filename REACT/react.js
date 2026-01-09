@@ -830,3 +830,4 @@
 
 // createRoot(document.querySelector("#root")).render(<Blaster />);
 //47
+// начал
