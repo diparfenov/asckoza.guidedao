@@ -2,25 +2,21 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [items, setItems] = useState([]);
-  useEffect(() => {
-    if (items.length === 0) {
-      document.title = `Добавьте первый товар`;
-    } else if (items.length === 1) {
-      document.title = `Добавлен один товар`;
-    } else {
-      document.title = `Добавлено ${items.length} товаров`;
-    }
-  });
+  const [counter, setCounter] = useState(0);
 
-  function handleButtonClick() {
-    setItems([...items, { id: items.length }]);
-  }
+  useEffect(() => {
+    document.title = "Привет!";
+    setTimeout(() => {
+      document.title = "Я подсяду?";
+    }, 1000);
+  });
 
   return (
     <>
-      <h2>Всего товаров: {items.length}</h2>
-      <button onClick={handleButtonClick}>Добавить товар</button>
+      <h2>Обновлений стейта: {counter}</h2>
+      <button onClick={() => setCounter((prev) => prev + 1)}>
+        Обновить стейт
+      </button>
     </>
   );
 }
