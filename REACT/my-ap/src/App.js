@@ -3,20 +3,28 @@ import { createRoot } from "react-dom/client";
 import mapboxgl from "mapbox-gl";
 import "./styles.css";
 
-// index.js
-import { createRoot } from "react-dom/client";
+/*
+========================================
+ПАРАГРАФ 1 — JSX, АТРИБУТЫ И PROPS
+========================================
+*/
 
 // =========================
-// Компонент с пропсами и атрибутами
+// 1. Компонент с props
 // =========================
 function Greeting(props) {
-  // props — это объект, содержащий все переданные значения атрибутов
   return (
-    <div className="example">
-      {/* Используем JSX-выражение внутри {} */}
-      <h2>Hello, {props.name}!</h2>
-      <p>Ваш возраст: {props.age}</p>
-      {/* Можно использовать стандартные HTML-атрибуты */}
+    <div className="example-block">
+      <h4>Компонент Greeting</h4>
+
+      {/* JSX-выражения через {} */}
+      <p>
+        Привет, <strong>{props.name}</strong>!
+      </p>
+
+      <p>Возраст: {props.age}</p>
+
+      {/* Атрибуты пишутся camelCase */}
       <button onClick={() => alert(`Привет, ${props.name}!`)}>
         Нажми меня
       </button>
@@ -29,20 +37,28 @@ function Greeting(props) {
 // =========================
 function App() {
   return (
-    <div>
-      <h1>123</h1>
+    <div className="container">
+      <h1>📘 React Конспект</h1>
 
-      {/* Пример использования компонента с пропсами */}
-      <Greeting name="Алексей" age={25} />
-      <Greeting name="Мария" age={30} />
+      {/* ===== ПАРАГРАФ 1 ===== */}
+      <section className="paragraph">
+        <h2>Параграф 1: JSX, атрибуты и props</h2>
+
+        <p>В этом параграфе мы изучаем:</p>
+
+        <ul>
+          <li>JSX</li>
+          <li>Выражения внутри {"{}"}</li>
+          <li>Атрибуты (className, onClick)</li>
+          <li>Передачу props</li>
+        </ul>
+
+        <Greeting name="Алексей" age={25} />
+        <Greeting name="Мария" age={30} />
+      </section>
     </div>
   );
 }
 
-// Рендерим компонент в #root
+// Рендер
 createRoot(document.querySelector("#root")).render(<App />);
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(<App />);
